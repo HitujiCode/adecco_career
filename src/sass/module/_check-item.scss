@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.check-item {
+  position: relative;
+  padding-left: rem(28);
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(23 / 14);
+  @include mq("md") {
+    font-size: rem(15);
+    line-height: 2;
+  }
+}
+
+.check-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(19);
+  height: rem(19);
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

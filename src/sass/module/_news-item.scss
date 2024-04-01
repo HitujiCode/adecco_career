@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.news-item {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.news-item__date {
+  font-size: rem(14);
+  font-family: $second-font;
+  color: $gray;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(15);
+  }
+}
+
+.news-item__tag {
+  margin-left: rem(16);
+  font-size: 10px;
+  font-weight: $medium;
+  font-family: $second-font;
+  color: $white;
+  line-height: 1;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: $red;
+  border-radius: 5px 0 5px 0;
+  padding-top: rem(3);
+  padding-inline: rem(10);
+  padding-bottom: rem(4);
+  @include mq("md") {
+    order: 1;
+    margin-left: rem(24);
+    font-size: 12px;
+    padding-top: rem(4);
+    padding-inline: rem(12);
+    padding-bottom: rem(4);
+  }
+}
+
+.news-item__title {
+  font-size: rem(14);
+  line-height: calc(20 / 14);
+  @include mq("md") {
+    margin-left: rem(28);
+    font-size: rem(15);
+    line-height: calc(21 / 15);
+  }
+}

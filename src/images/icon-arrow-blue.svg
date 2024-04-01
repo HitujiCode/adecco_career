@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.161" height="23.986" viewBox="0 0 21.161 23.986">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_5" data-name="長方形 5" width="10.525" height="10.8" fill="#135589"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_6" data-name="長方形 6" width="23.986" height="21.161" fill="none" stroke="#135589" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_16" data-name="グループ 16" transform="translate(0 23.986) rotate(-90)">
+    <g id="グループ_13" data-name="グループ 13" transform="translate(6.731 6.686)">
+      <g id="グループ_12" data-name="グループ 12" clip-path="url(#clip-path)">
+        <path id="パス_1" data-name="パス 1" d="M.705,4.591.17,5.127a.576.576,0,0,0,0,.814l0,0L4.854,10.63a.576.576,0,0,0,.814,0l0,0,4.684-4.686a.576.576,0,0,0,0-.814l0,0-.535-.535a.58.58,0,0,0-.819,0L8.994,4.6l-2.767,2.9V.578A.578.578,0,0,0,5.65,0H4.878A.578.578,0,0,0,4.3.578V7.505L1.533,4.6A.576.576,0,0,0,.72,4.577l-.015.015" transform="translate(0 0.001)" fill="#135589"/>
+      </g>
+    </g>
+    <g id="グループ_15" data-name="グループ 15">
+      <g id="グループ_14" data-name="グループ 14" clip-path="url(#clip-path-2)">
+        <path id="パス_2" data-name="パス 2" d="M18.364,19.207a11.017,11.017,0,1,0-14.7,0" transform="translate(0.977 0.978)" fill="none" stroke="#135589" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

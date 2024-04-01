@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.button-arrow {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: rem(17);
+  font-weight: $semi-bold;
+  line-height: 1;
+  color: $ocher;
+  padding-right: rem(34);
+  @include mq("md") {
+    font-size: rem(16);
+    padding-right: rem(24);
+  }
+}
+
+.button-arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: rem(21);
+  height: rem(24);
+  background-image: url("./../images/icon-arrow-blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
