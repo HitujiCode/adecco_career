@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.button {
+  display: inline-block;
+  max-width: rem(345);
+  width: 100%;
+  padding: rem(15);
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  background-color: $red;
+  color: $white;
+  text-align: center;
+  border-radius: 20px 0 20px 0;
+  transition: background-color 0.3s;
+  @include mq("md") {
+    padding-top: rem(19);
+    padding-bottom: rem(15);
+    font-size: rem(26);
+  }
+}
+
+.button span {
+  font-size: 10px;
+  font-weight: $medium;
+  font-family: $second-font;
+  font-style: italic;
+  text-transform: uppercase;
+  display: block;
+  margin-top: rem(5);
+}

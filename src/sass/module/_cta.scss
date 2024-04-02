@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.cta {
+  position: fixed;
+  bottom: 0;
+  inset-inline: 0;
+  display: flex;
+  gap: rem(16);
+  padding-right: rem(5);
+  z-index: $cta;
+  @include mq("md") {
+    left: initial;
+    writing-mode: vertical-rl;
+    padding-right: rem(15);
+    gap: rem(9);
+  }
+}
+
+.cta-button {
+  width: 100%;
+}
+
+.cta-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(14);
+  font-weight: $semi-bold;
+  color: $white;
+  line-height: 1;
+  background-color: $red;
+  border-radius: 10px 10px 0 0;
+  height: rem(36);
+  @include mq("md") {
+    height: fit-content;
+    padding-top: rem(14);
+    padding-right: rem(13);
+    padding-bottom: rem(13);
+    padding-left: rem(14);
+    border-radius: 10px;
+  }
+}
+
+.cta-button span {
+  position: relative;
+  padding-right: rem(27);
+  display: grid;
+  justify-content: center;
+  @include mq("md") {
+    padding-right: 0;
+    padding-bottom: rem(27);
+    justify-content: initial;
+    align-items: center;
+  }
+}
+
+.cta-button span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: rem(19);
+  height: rem(19);
+  background-image: url("../../assets/images/icon-pencil.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @include mq("md") {
+    right: initial;
+    bottom: 0;
+  }
+}
+
+.cta-button .cta-icon {
+  width: rem(36);
+  @include mq("md") {
+    width: rem(50);
+  }
+}
+
+.cta-icon img {
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

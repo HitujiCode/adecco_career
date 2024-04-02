@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.event-item {
+}
+
+.event-item__img {
+  margin-inline: auto;
+  width: rem(291);
+  border: 4px solid $white;
+}
+
+.event-item__img img {
+  aspect-ratio: 291/236;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-item__body {
+  margin-top: rem(-118);
+  padding-top: rem(140);
+  padding-inline: rem(25);
+  padding-bottom: rem(23);
+  background-color: $white;
+  border-radius: 0 20px 0 20px;
+  @include mq("md") {
+    padding-top: rem(148);
+    padding-bottom: rem(30);
+  }
+}
+
+.event-item__title {
+  font-size: rem(15);
+  font-weight: $bold;
+  color: $ocher;
+  line-height: calc(21 / 15);
+  text-align: center;
+}
+
+.event-item__text {
+  margin-top: rem(20);
+}

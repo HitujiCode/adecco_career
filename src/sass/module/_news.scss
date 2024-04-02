@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.news {
+}
+
+.news__inner.inner {
+}
+
+.news__container {
+  @include mq("md") {
+    display: flex;
+    gap: rem(50);
+  }
+}
+
+.news__head {
+  display: grid;
+  justify-content: center;
+  @include mq("md") {
+    justify-content: flex-start;
+  }
+}
+
+.news__list {
+  margin-top: rem(32);
+}
+
+.news__list-item {
+}

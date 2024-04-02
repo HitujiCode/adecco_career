@@ -20,8 +20,10 @@
   font-style: italic;
   position: relative;
   padding-left: rem(28);
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
   @include mq("md") {
     font-size: rem(16);
   }
@@ -39,4 +41,16 @@
   @include mq("md") {
     width: rem(29);
   }
+}
+
+.section-head--white {
+  @extend .section-head;
+}
+
+.section-head--white .section-head__main {
+  color: $white;
+}
+
+.section-head--white .section-head__sub::before {
+  background-color: $red;
 }

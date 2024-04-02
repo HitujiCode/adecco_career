@@ -33,26 +33,225 @@
 </head>
 
 <body>
-  <header>
-
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">
+        <a href="#">成長産業分野<br>キャリア形成 支援事業</a>
+      </h1>
+      <ul class="header__banners">
+        <li class="header__banner01">
+          <img src="./assets/images/banner01.svg" alt="" width="" height="" />
+        </li>
+        <li class="header__banner02">
+          <picture>
+            <source srcset="./assets/images/banner02@2x.webp" type="image/webp">
+            <img src="./assets/images/banner02@2x.png" alt="" width="" height="" />
+          </picture>
+        </li>
+        <li class="header__banner03">
+          <picture>
+            <source srcset="./assets/images/banner03@2x.webp" type="image/webp">
+            <img src="./assets/images/banner03@2x.png" alt="" width="" height="" />
+          </picture>
+        </li>
+      </ul>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#"><span>ホーム</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>新着情報</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>事業概要</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>コース紹介</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>受講の流れ</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>よくあるご質問</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#"><span>お問い合わせ</span></a>
+          </li>
+        </ul>
+        <div class="header__nav-sitemap">
+          <a href="#" target="_blank" rel="noopener"><span>サイトマップ</span></a>
+        </div>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="header__drawer js-drawer">
+      <nav class="header__drawer-nav">
+        <ul class="header__drawer-list">
+          <li class="header__drawer-item">
+            <a href="#">ホーム</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">新着情報</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">事業概要</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">コース紹介</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">受講の流れ</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">よくあるご質問</a>
+          </li>
+          <li class="header__drawer-item">
+            <a href="#">お問い合わせ</a>
+          </li>
+          <li class="header__drawer-item header__drawer-item--contact">
+            <a href="#" target="_blank" rel="noopener">サイトマップ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <div class="inner">
-      <div class="fv__list-item">
-        <p class="fv__list-item-top">PCや<br class="u-mobile">通信機器を</p>
-        <p class="fv__list-item-bottom">無料貸与</p>
+    <div class="cta">
+      <div class="cta-button">
+        <a href="#"><span>お申し込みはこちら</span></a>
       </div>
+      <div class="cta-icon">
+        <img src="./assets/images/icon-arrow-yellow.svg" alt="" width="" height="" />
+      </div>
+    </div>
+
+    <section class="fv layout-fv">
+      <div class="fv__inner inner">
+        <div class="fv__content">
+          <div class="fv__main">
+            <div class="fv__read">
+              <picture>
+                <source srcset="./assets/images/read_pc@2x.webp" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="./assets/images/read_pc@2x.png" media="(min-width: 768px)" />
+                <source srcset="./assets/images/read_sp@2x.webp" type="image/webp" />
+                <img src="./assets/images/read_sp@2x.png" alt="" width="" height="" />
+              </picture>
+            </div>
+            <div class="fv__title">
+              <source srcset="./assets/images/fv-title_pc.svg" media="(min-width: 768px)" />
+              <img src="./assets/images/fv-title_sp.svg" alt="" width="" height="" />
+            </div>
+          </div>
+          <div class="fv__sub">
+            <ul class="fv__point-list">
+              <li class="fv__point-item">eラーニングで好きな時間に学べる</li>
+              <li class="fv__point-item">就職までしっかりバックアップ</li>
+            </ul>
+            <ul class="fv__feature-list">
+              <li class="fv__feature-item">
+                <p class="fv__feature-item-top">PCや<br class="u-mobile">通信機器を</p>
+                <p class="fv__feature-item-bottom">無料貸与</p>
+              </li>
+              <li class="fv__feature-item">
+                <p class="fv__feature-item-top">メンターが<br class="u-mobile">サポート</p>
+                <p class="fv__feature-item-bottom">受講相談</p>
+              </li>
+              <li class="fv__feature-item--delta">
+                <p class="fv__feature-item-top">キャリア<br class="u-mobile">アドバイザーが</p>
+                <p class="fv__feature-item-bottom">就職支援</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fv__img">
+        <picture>
+          <source srcset="./assets/images/fv_pc@2x.webp" type="image/webp" media="(min-width: 768px)" />
+          <source srcset="./assets/images/fv_pc@2x.png" media="(min-width: 768px)" />
+          <source srcset="./assets/images/fv_sp1@2x.webp" type="image/webp" />
+          <img src="./assets/images/fv_sp1@2x.png" alt="" width="" height="" />
+        </picture>
+      </div>
+      <div class="fv__banner">
+        <img src="./assets/images/banner-fv.svg" alt="" width="" height="" />
+      </div>
+    </section>
+
+    <section class="news layout-news">
+      <div class="news__inner inner">
+        <div class="news__container">
+          <div class="news__head">
+            <hgroup class="section-head">
+              <h2 class="section-head__main">新着情報</h2>
+              <p class="section-head__sub">news</p>
+            </hgroup>
+          </div>
+          <ul class="news__list">
+            <li class="news__list-item news-item">
+              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
+              <span class="news-item__tag">new</span>
+              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+            </li>
+            <li class="news__list-item news-item">
+              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
+              <span class="news-item__tag">new</span>
+              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+            </li>
+            <li class="news__list-item news-item">
+              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
+              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutus layout-aboutus">
+      <div class="aboutus__inner inner">
+        <div class="aboutus__container">
+          <div class="aboutus__head">
+            <hgroup class="section-head">
+              <h2 class="section-head__main">当事業について</h2>
+              <p class="section-head__sub">about us</p>
+            </hgroup>
+          </div>
+          <div class="aboutus__content">
+            <h3 class="aboutus__title">「成長産業分野」に、スキルを磨いて<span>挑戦するチャンスをあなたに</span>
+            </h3>
+            <p class="aboutus__text">
+              非正規労働者等へキャリア形成の機会を提供し、雇用の安定化と成長産業分野への人材シフトを促進するため、eラーニング等による新たな資格やスキルの取得支援及び職業紹介等の就職支援を一体的に行う事業です。</p>
+            <ul class="aboutus__list">
+              <li class="aboutus__item check-item">
+                働きながらスキル習得！<span>正社員を目指したいあなたへ</span>
+              </li>
+              <li class="aboutus__item check-item">
+                スキマ時間を活用！<span>家事や育児で忙しいあなたへ</span>
+              </li>
+              <li class="aboutus__item check-item">
+                キャリアチェンジを目指して！<span>就活を始めようとしているあなたへ</span>
+              </li>
+            </ul>
+            <p class="aboutus__text-line">国家資格を持ったキャリアアドバイザーと就業支援に精通したメンターが、<br
+                class="u-desktop">コースの受講完了、就職決定までしっかり<span>バックアップします！！</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class=" inner">
 
       <hgroup class="section-head">
         <h2 class="section-head__main">当事業について</h2>
         <p class="section-head__sub">about us</p>
       </hgroup>
 
-      <div class="news-item">
-        <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
-        <span class="news-item__tag">new</span>
-        <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
-      </div>
+
 
       <p class="check-item">
         働きながらスキル習得！ 正社員を目指したいあなたへ
@@ -60,7 +259,9 @@
 
       <div class="point-item">
         <div class="point-item__head">
-          <p class="point-item__num">point / ０1</p>
+          <div class="point-item__num">
+            <p class="item-head">point / ０1</p>
+          </div>
           <div class="point-item__img">
             <img src="./assets/images/point01.svg" alt="" width="" height="" loading="lazy" />
           </div>
@@ -71,7 +272,7 @@
 
       <h3 class="course-head">デジタルコース</h3>
 
-      <a class="course-item">
+      <a class="course-item--blue">
         <div class="course-item__head">
           <h4 class="course-item__title">ITインフラエンジニア科</h4>
           <dl class="course-item__capacity-wrap">
@@ -97,18 +298,94 @@
               テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
             </p>
           </div>
-          <div class="course-item__foot">
-            <ul class="course-item__foot-list">
-              <li class="course-item__foot-item">プログラミングを学びたい</li>
-              <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-              <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-            </ul>
-            <div class="course-item__foot-button">
-              <a href="#" class="button-arrow">詳細はこちら</a>
-            </div>
+        </div>
+        <div class="course-item__foot">
+          <ul class="course-item__foot-list">
+            <li class="course-item__foot-item">プログラミングを学びたい</li>
+            <li class="course-item__foot-item">システムエンジニアを目指したい</li>
+            <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
+          </ul>
+          <div class="course-item__foot-button">
+            <a href="#" class="button-arrow">詳細はこちら</a>
           </div>
         </div>
       </a>
+
+      <div class="flow-item">
+        <div class="flow-item__head">
+          <p class="item-head">step / ０1</p>
+        </div>
+        <div class="flow-item__img">
+          <picture>
+            <source srcset="./assets/images/flow01@2x.webp" type="image/webp">
+            <img src="./assets/images/flow01@2x.png" alt="" width="" height="" loading="lazy" />
+          </picture>
+        </div>
+        <h3 class="flow-item__title">簡単入力で日程調整</h3>
+        <p class="flow-item__text text">お申し込みフォームから必要な情報を入力し、面談日程をご選択ください。</p>
+      </div>
+
+      <a href="#" class="button">エントリーはこちら<span>entry</span></a>
+
+      <div class="event-item">
+        <div class="event-item__img">
+          <picture>
+            <source srcset="./assets/images/dammy01.webp" type="image/webp">
+            <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+          </picture>
+        </div>
+        <div class="event-item__body">
+          <h3 class="event-item__title">受講コース別交流・相談会<br>コース別集合型学習会</h3>
+          <p class="event-item__text text">
+            各コースを受講して得られるスキルの職種を募集している企業から直接、会社紹介や募集内容の紹介を行います！<br>求人票だけでは伝わりづらい、企業の魅力をしっかり聞ける貴重な機会に！<br>参加者からの質問も可能です。
+          </p>
+        </div>
+      </div>
+
+      <a href="#" class="interview-item">
+        <div class="interview-item__head">
+          <p class="item-head">interview / ０1</p>
+        </div>
+        <div class="interview-item__top">
+          <div class="interview-item__img">
+            <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+          </div>
+          <div class="interview-item__names">
+            <p class="interview-item__name">A・A<span>さん</span></p>
+            <p class="interview-item__sex">女性</p>
+          </div>
+        </div>
+        <div class="interview-item__body">
+          <div class="interview-item__courses">
+            <p class="interview-item__course">受講コース</p>
+            <p class="interview-item__class">○○科受講</p>
+          </div>
+          <p class="interview-item__text text">
+            説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+        </div>
+        <div class="interview-item__button">
+          <a href="#" class="button-arrow">詳細はこちら</a>
+        </div>
+      </a>
+
+      <div class="recruit-item">
+        <h3 class="recruit-item__title">大手システム開発企業、ITエンジニア</h3>
+        <ul class="recruit-item__list">
+          <li class="recruit-item__item">約5～6割が在宅勤務</li>
+          <li class="recruit-item__item">年休126日</li>
+          <li class="recruit-item__item">昨年度賞与3.3～4.5ヶ月</li>
+        </ul>
+      </div>
+
+      <dl class="faq-item">
+        <dt class="faq-item__question">Q<span>対象要件を教えてください。</span></dt>
+        <dd class="faq-item__answer">①正社員として就業していない方</dd>
+        <dd class="faq-item__answer">②非正規雇用で就業している方。または、育児等によりｅラーニング等による訓練の受講を希望し、早期の再就職を目指す求職中の方。</dd>
+        <dd class="faq-item__answer">③都内に住んでいる方。または、都内に勤務先がある方。</dd>
+        <dd class="faq-item__answer">④令和４年度・令和５年度に「成長産業分野キャリア形成支援事業」の受講が決定していない方。</dd>
+        <dd class="faq-item__answer">⑤令和４年度・令和５年度に「類似事業」の受講が決定していない方。</dd>
+        <dd class="faq-item__answer">※類似事業は「ひとり親向けオンライン訓練・就活支援事業」「女性ITエンジニア育成事業」「女性向けキャリアチェンジ支援事業」</dd>
+      </dl>
     </div>
   </main>
   <footer>

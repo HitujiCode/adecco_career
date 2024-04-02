@@ -6,6 +6,13 @@
   }
 }
 
+.news-item + .news-item {
+  margin-top: rem(15);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
 .news-item__date {
   font-size: rem(14);
   font-family: $second-font;

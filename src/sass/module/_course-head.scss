@@ -25,3 +25,11 @@
     height: rem(6);
   }
 }
+
+.course-head--blue {
+  @extend .course-head;
+}
+
+.course-head--blue::before {
+  background-image: linear-gradient(to right, $blue 40%, transparent 40%);
+}

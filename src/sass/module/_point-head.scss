@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.item-head {
+  font-size: rem(14);
+  font-weight: $medium;
+  font-family: $second-font;
+  font-style: italic;
+  line-height: 1;
+  text-transform: uppercase;
+}

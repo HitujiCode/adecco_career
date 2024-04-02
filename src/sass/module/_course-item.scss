@@ -169,3 +169,27 @@
   margin-top: rem(15);
   text-align: right;
 }
+
+.course-item--blue {
+  @extend .course-item;
+}
+
+.course-item--blue .course-item__head {
+  border-bottom-color: rgba($blue, 0.4);
+}
+
+.course-item--blue .course-item__description-head {
+  color: $blue;
+}
+
+.course-item__description-head::before {
+  background-color: $blue;
+}
+
+.course-item--blue .course-item__description-skill {
+  background-color: $blue;
+}
+
+.course-item--blue .course-item__foot-item::before {
+  background-color: $blue;
+}

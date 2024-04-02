@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.recruit-item {
+  padding: rem(20) rem(18);
+  border-radius: 0 20px 0 20px;
+}
+
+.recruit-item__title {
+  font-size: rem(15);
+  font-weight: $medium;
+  font-family: $second-font;
+  color: $ocher;
+  line-height: calc(20 / 15);
+  border: 1px solid $yellow;
+  padding: rem(4) rem(29);
+}
+
+.recruit-item__list {
+  margin-top: rem(14);
+}
+
+.recruit-item__item {
+  position: relative;
+  font-size: rem(14);
+  color: $gray;
+  line-height: calc(20 / 14);
+  padding-left: rem(12);
+}
+
+.recruit-item__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(6);
+  height: rem(6);
+  background-color: $blue;
+  border-radius: 50%;
+}

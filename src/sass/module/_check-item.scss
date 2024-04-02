@@ -24,3 +24,11 @@
   background-position: center;
   background-size: contain;
 }
+
+.check-item span {
+  display: inline-block;
+}
+
+.check-item + .check-item {
+  margin-top: rem(15);
+}

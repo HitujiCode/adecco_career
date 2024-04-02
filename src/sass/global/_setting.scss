@@ -38,9 +38,26 @@ $yellow: #c9b772;
 $ocher: #9e800e;
 $gray: #707070;
 $lightgray: #f9f9f9;
+$offwhite: #f6f1ea;
+$beige: #b3a696;
+$bg-beige: #b4a696;
+$bg-ocher: #c9b772;
+
+// z-index
+$cta: 1000;
+$hamburger: 999;
+$header: 900;
+$drawer: 800;
 
 body {
   font-family: $base-font;
   font-optical-sizing: auto;
   color: $black;
+}
+
+body.is-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
 }
