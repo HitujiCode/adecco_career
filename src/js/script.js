@@ -1,4 +1,3 @@
-
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
@@ -36,5 +35,11 @@ jQuery(function ($) {
     if (window.matchMedia("(min-width: 768px)").matches) {
       closeDrawer();
     }
+  });
+
+  // Q&Aアコーディオン
+  $(".js-faq").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("is-open");
   });
 });

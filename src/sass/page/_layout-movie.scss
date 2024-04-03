@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-movie {
+  padding-top: rem(30);
+  @include mq("md") {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+  }
+}

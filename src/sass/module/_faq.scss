@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.faq {
+}
+
+.faq__inner.inner {
+  @include mq("md") {
+    max-width: 1050px;
+  }
+}
+
+.faq__head {
+  text-align: center;
+}
+
+.faq__list {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.faq__item {
+}

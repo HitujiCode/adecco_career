@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.interview {
+  position: relative;
+  background-color: rgba($bg-lightgray, 0.37);
+}
+
+.interview::before,
+.interview::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+}
+
+.interview::before {
+  height: rem(158);
+  background-color: $darkblue;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  @include mq("md") {
+    height: rem(167);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
+  }
+}
+
+.interview::after {
+  height: rem(200);
+  background-color: $blue;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
+  @include mq("md") {
+    height: rem(342);
+  }
+}
+
+.interview__inner.inner {
+  position: relative;
+  z-index: 1;
+  @include mq("md") {
+    max-width: 1050px;
+  }
+}
+
+.interview__container {
+}
+
+.interview__head {
+  text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.interview__content {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.interview__list {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+  }
+}
+
+.interview__item {
+  padding-bottom: rem(30);
+  @include mq("md") {
+    padding-bottom: 0;
+  }
+}
+
+.interview__item + .interview__item {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.interview__item:not(:last-child) {
+  border-bottom: 1px solid $blue;
+  @include mq("md") {
+    border-bottom: none;
+  }
+}

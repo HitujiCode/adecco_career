@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.note {
+  font-size: rem(14);
+  line-height: calc(25 / 14);
+  text-align: justify;
+}

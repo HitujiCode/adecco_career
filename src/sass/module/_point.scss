@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.point {
+}
+
+.point__inner.inner {
+}
+
+.point__container {
+}
+
+.point__head {
+  text-align: center;
+}
+
+.point__list {
+  @include mq("md") {
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.point__item {
+}
+
+.point__item:not(:first-child) {
+  @include mq("md") {
+    border-left: 1px solid $yellow;
+  }
+}

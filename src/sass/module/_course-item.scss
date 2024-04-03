@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .course-item {
-  display: block;
   padding: rem(15);
   background-color: $white;
+  filter: drop-shadow(0 0 15px #0000000d);
   @include mq("md") {
     padding: rem(24) rem(30);
   }
@@ -182,7 +182,7 @@
   color: $blue;
 }
 
-.course-item__description-head::before {
+.course-item--blue .course-item__description-head::before {
   background-color: $blue;
 }
 

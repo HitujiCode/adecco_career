@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.flow {
+}
+
+.flow__inner.inner {
+}
+
+.flow__head {
+  text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.flow__content {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.flow__list {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(26);
+  }
+}
+
+.flow__item {
+  position: relative;
+}
+
+.flow__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: rem(-40);
+  left: 50%;
+  transform: translateX(-50%);
+  width: rem(35);
+  height: rem(20);
+  background-color: $blue;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  @include mq("md") {
+    content: none;
+  }
+}
+
+.flow__item + .flow__item {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.flow__button {
+  margin-top: rem(40);
+  text-align: center;
+}

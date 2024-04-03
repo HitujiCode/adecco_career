@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.reception-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-block: 3px solid $white;
+}
+
+.reception-table tr:not(:first-child) {
+  border-top: 1px solid $white;
+}
+
+.reception-table th,
+.reception-table td {
+  line-height: 1;
+  text-align: center;
+  padding: rem(15) 0;
+  @include mq("md") {
+    padding: rem(12) 0;
+  }
+}
+
+.reception-table th:nth-child(1),
+.reception-table td:nth-child(1) {
+  border-right: 1px solid $white;
+  width: calc(100 / 345 * 100%);
+}
+.reception-table th {
+  font-size: rem(14);
+  padding-block: rem(11);
+  @include mq("md") {
+    font-size: rem(17);
+  }
+}
+
+.reception-table td {
+  font-size: rem(12);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.reception-table td:nth-child(1) {
+  font-size: rem(13);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}

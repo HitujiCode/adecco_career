@@ -15,6 +15,7 @@
 
 .section-head__sub {
   font-size: rem(14);
+  font-weight: $medium;
   font-family: $second-font;
   line-height: 1;
   font-style: italic;
@@ -47,10 +48,11 @@
   @extend .section-head;
 }
 
-.section-head--white .section-head__main {
+.section-head--white .section-head__main,
+.section-head--white .section-head__sub {
   color: $white;
 }
 
 .section-head--white .section-head__sub::before {
-  background-color: $red;
+  background-color: $white;
 }

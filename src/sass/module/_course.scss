@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.course {
+}
+
+.course__inner.inner {
+  @include mq("md") {
+    max-width: 1000px;
+  }
+}
+
+.course__container {
+}
+
+.course__head {
+  text-align: center;
+}
+
+.course__content {
+  margin-top: rem(40);
+}
+
+.course__content + .course__content {
+  @include mq("md") {
+    margin-top: rem(92);
+  }
+}
+
+.course__title {
+}
+
+.course__list {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.course__item {
+}
+
+.course__item + .course__item {
+  margin-top: rem(25);
+  @include mq("md") {
+    margin-top: rem(30);
+  }
+}

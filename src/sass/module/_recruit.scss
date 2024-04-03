@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.recruit {
+  overflow-x: clip;
+}
+
+.recruit__inner.inner {
+}
+
+.recruit__container {
+}
+
+.recruit__head {
+  text-align: center;
+}
+
+.recruit__content {
+  margin-top: rem(32);
+  padding-top: rem(20);
+  background-image: linear-gradient(
+    to bottom,
+    rgba($bg-ocher, 0.1) calc(347 / 1010 * 100%),
+    transparent calc(347 / 1010 * 100%)
+  );
+  margin-inline: calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
+  @include mq("md") {
+    margin-top: rem(40);
+    margin-inline: auto;
+    padding-inline: initial;
+    background-image: initial;
+    max-width: 1000px;
+  }
+}
+
+.recruit__read {
+  font-size: rem(15);
+  line-height: 2;
+}
+
+.recruit__note {
+  margin-top: rem(20);
+}
+
+.recruit__list {
+  margin-top: rem(20);
+  background-color: $bg-ocher;
+  border-radius: 20px 0 20px 0;
+  padding-top: rem(24);
+  padding-inline: rem(16);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(65);
+    row-gap: rem(32);
+    border-radius: 30px 0 30px 0;
+    padding-top: rem(72);
+    padding-inline: rem(55);
+    padding-bottom: rem(90);
+  }
+}
+
+.recruit__item {
+}
+
+.recruit__item + .recruit__item {
+  margin-top: rem(10);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.recruit__button {
+  margin-top: rem(-38);
+  text-align: center;
+}

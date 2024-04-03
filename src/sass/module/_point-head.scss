@@ -8,3 +8,8 @@
   line-height: 1;
   text-transform: uppercase;
 }
+
+.item-head--lightblue {
+  @extend .item-head;
+  color: $lightblue;
+}

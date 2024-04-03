@@ -6,10 +6,10 @@
   align-items: center;
   padding: rem(25) 0;
   border-bottom: 1px solid $yellow;
+  height: 100%;
   @include mq("md") {
     border-bottom: initial;
-    border-left: 1px solid $yellow;
-    padding: rem(18) rem(34);
+    padding: rem(8) rem(34) rem(15);
   }
 }
 
@@ -20,7 +20,6 @@
 }
 
 .point-item__num {
-
 }
 
 .point-item__img {
@@ -29,8 +28,7 @@
 }
 
 .point-item__img img {
-  aspect-ratio: 75/47;
-  width: 100%;
+  width: auto;
   height: auto;
   object-fit: contain;
 }
@@ -41,10 +39,12 @@
   font-weight: $bold;
   color: $blue;
   line-height: calc(26 / 18);
+  text-align: center;
 }
 
 .point-item__text {
   margin-top: rem(17);
   font-size: rem(15);
   line-height: calc(29 / 15);
+  flex-grow: 1;
 }

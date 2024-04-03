@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.layout-event {
+  padding-top: rem(32);
+  padding-bottom: rem(32);
+  background-color: rgba($beige, 0.37);
+  @include mq("md") {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+  }
+}
