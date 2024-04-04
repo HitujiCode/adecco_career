@@ -10,7 +10,7 @@
   color: $ocher;
   padding-right: rem(34);
   @include mq("md") {
-    font-size: clamp(12px, calc(16 / 1400 * 100%), rem(14));
+    font-size: clamp(12px, calc(17 / 1400 * 100vw), rem(17));
   }
 }
 

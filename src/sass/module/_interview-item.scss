@@ -102,7 +102,7 @@
   color: $gray;
   line-height: calc(20 / 14);
   @include mq("md") {
-    font-size: clamp(10px, calc(14 / 1400 * 100%), rem(14));
+    font-size: clamp(10px, calc(14 / 1400 * 100vw), rem(14));
   }
 }
 

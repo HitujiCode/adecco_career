@@ -24,7 +24,7 @@
   @include mq("md") {
     width: fit-content;
     padding: rem(3) rem(10);
-    font-size: clamp(10px, calc(15 / 1400 * 100%), rem(15));
+    font-size: clamp(10px, calc(15 / 1400 * 100vw), rem(15));
   }
 }
 
@@ -43,7 +43,7 @@
   line-height: calc(20 / 14);
   padding-left: rem(12);
   @include mq("md") {
-    font-size: clamp(10px, calc(14 / 1400 * 100%), rem(14));
+    font-size: clamp(10px, calc(14 / 1400 * 100vw), rem(14));
   }
 }
 

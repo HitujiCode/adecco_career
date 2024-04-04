@@ -45,7 +45,7 @@
   text-align: center;
   @include mq("md") {
     flex-grow: 1;
-    font-size: clamp(12px, calc(15 / 1400 * 100%), rem(15));
+    font-size: clamp(12px, calc(15 / 1400 * 100vw), rem(15));
   }
 }
 

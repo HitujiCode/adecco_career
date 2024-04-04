@@ -35,9 +35,9 @@
 .header__title a {
   display: flex;
   align-items: center;
-  font-size: 11px;
   font-weight: $extra-bold;
   line-height: calc(14 / 11);
+  font-size: clamp(10px, calc(11 / 1400 * 100vw), 11px);
   @include mq("md") {
     font-size: rem(15);
     line-height: calc(19 / 15);
