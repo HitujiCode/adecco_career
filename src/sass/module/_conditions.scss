@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .conditions {
+  background-color: $white;
 }
 
 .conditions__inner.inner {
@@ -16,8 +17,9 @@
 .conditions__head {
   text-align: center;
   @include mq("md") {
-    width: calc(152 / 1280 * 100%);
+    width: calc(152 / 1280 * 100vw);
     text-align: left;
+    padding-top: rem(18);
   }
 }
 
@@ -43,8 +45,8 @@
 }
 
 .conditions__note {
-  margin-top: rem(20);
+  margin-top: rem(16);
   @include mq("md") {
-    margin-top: rem(24);
+    margin-top: rem(20);
   }
 }

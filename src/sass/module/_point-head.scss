@@ -7,6 +7,12 @@
   font-style: italic;
   line-height: 1;
   text-transform: uppercase;
+  @include mq("md") {
+    font-size: clamp(10px, calc(14 / 1400 * 100%), rem(14));
+  }
+  @include mq("md") {
+    font-size: clamp(10px, calc(15 / 1400 * 100%), rem(15));
+  }
 }
 
 .item-head--lightblue {

@@ -6,12 +6,14 @@ jQuery(function ($) {
 
   function openDrawer() {
     scrollPosition = $(window).scrollTop();
+    $(".js-header .header__inner").addClass("is-open");
     $(".js-drawer").addClass("is-open");
     $(".js-hamburger").addClass("is-open");
     $("body").addClass("is-fixed").css("top", -scrollPosition);
   }
 
   function closeDrawer() {
+    $(".js-header .header__inner").removeClass("is-open");
     $(".js-drawer").removeClass("is-open");
     $(".js-hamburger").removeClass("is-open");
     $("body").removeClass("is-fixed").css("top", "");

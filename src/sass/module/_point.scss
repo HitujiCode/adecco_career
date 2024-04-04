@@ -4,6 +4,9 @@
 }
 
 .point__inner.inner {
+  @include mq("md") {
+    max-width: 1352px;
+  }
 }
 
 .point__container {
@@ -14,8 +17,12 @@
 }
 
 .point__list {
+  margin-top: rem(15);
+  margin-inline: auto;
+  max-width: rem(400);
   @include mq("md") {
     margin-top: rem(40);
+    max-width: revert;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }

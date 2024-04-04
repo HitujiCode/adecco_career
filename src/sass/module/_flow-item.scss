@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .flow-item__head {
@@ -13,6 +14,7 @@
 }
 
 .flow-item__img {
+  margin-top: rem(6);
   max-width: rem(300);
 }
 
@@ -21,11 +23,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 50px 0 50px;
+  border-radius: 0 rem(50) 0 rem(50);
 }
 
 .flow-item__title {
-  margin-top: rem(20);
+  margin-top: rem(25);
   font-size: rem(18);
   font-weight: $bold;
   line-height: 1;
@@ -34,4 +36,5 @@
 
 .flow-item__text {
   margin-top: rem(20);
+  flex-grow: 1;
 }

@@ -26,6 +26,8 @@
   justify-content: center;
   text-transform: uppercase;
   @include mq("md") {
+    margin-top: rem(23);
+    padding-left: rem(42);
     font-size: rem(16);
   }
 }
@@ -33,14 +35,14 @@
 .section-head__sub::before {
   content: "";
   position: absolute;
-  left: 0;
-  width: rem(14);
+  left: rem(-4);
+  width: rem(20);
   height: rem(2);
   background-color: $yellow;
   text-transform: uppercase;
   transform: rotate(-45deg);
   @include mq("md") {
-    width: rem(29);
+    width: rem(41);
   }
 }
 

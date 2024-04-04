@@ -33,28 +33,35 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header js-header">
     <div class="header__inner">
       <h1 class="header__title">
         <a href="#">成長産業分野<br>キャリア形成 支援事業</a>
       </h1>
-      <ul class="header__banners">
-        <li class="header__banner01">
-          <img src="./assets/images/banner01.svg" alt="" width="" height="" />
-        </li>
-        <li class="header__banner02">
-          <picture>
-            <source srcset="./assets/images/banner02@2x.webp" type="image/webp">
-            <img src="./assets/images/banner02@2x.png" alt="" width="" height="" />
-          </picture>
-        </li>
-        <li class="header__banner03">
-          <picture>
-            <source srcset="./assets/images/banner03@2x.webp" type="image/webp">
-            <img src="./assets/images/banner03@2x.png" alt="" width="" height="" />
-          </picture>
-        </li>
-      </ul>
+      <div class="footer__banners">
+        <div class="footer__banner">
+          <a href="#">
+            <img src="./assets/images/f-banner01.svg" alt="東京都" width="155" height="54" loading="lazy" />
+          </a>
+        </div>
+        <div class="footer__banner">
+          <a href="#">
+            <picture>
+              <source srcset="./assets/images/f-banner02@3x.webp" type="image/webp">
+              <img src="./assets/images/f-banner02@3x.png" alt="公共財団法人 東京しごと財団" width="155" height="54"
+                loading="lazy" />
+            </picture>
+          </a>
+        </div>
+        <div class="footer__banner">
+          <a href="#">
+            <picture>
+              <source srcset="./assets/images/f-banner03@3x.webp" type="image/webp">
+              <img src="./assets/images/f-banner03@3x.png" alt="東京しごとセンター" width="155" height="54" loading="lazy" />
+            </picture>
+          </a>
+        </div>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
@@ -80,7 +87,7 @@
           </li>
         </ul>
         <div class="header__nav-sitemap">
-          <a href="#" target="_blank" rel="noopener"><span>サイトマップ</span></a>
+          <a href="#"><span>サイトマップ</span></a>
         </div>
       </nav>
       <button class="header__hamburger js-hamburger">
@@ -90,45 +97,54 @@
       </button>
     </div>
     <div class="header__drawer js-drawer">
-      <nav class="header__drawer-nav">
-        <ul class="header__drawer-list">
-          <li class="header__drawer-item">
-            <a href="#">ホーム</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">新着情報</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">事業概要</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">コース紹介</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">受講の流れ</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">よくあるご質問</a>
-          </li>
-          <li class="header__drawer-item">
-            <a href="#">お問い合わせ</a>
-          </li>
-          <li class="header__drawer-item header__drawer-item--contact">
-            <a href="#" target="_blank" rel="noopener">サイトマップ</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__drawer-wrap">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-list">
+            <li class="header__drawer-item">
+              <a href="#">ホーム</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">新着情報</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">事業概要</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">コース紹介</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">受講の流れ</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">よくあるご質問</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#" target="_blank" rel="noopener">サイトマップ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
-    <!-- <div class="cta">
-      <div class="cta-button">
+    <div class="bg">
+      <picture>
+        <source srcset="./assets/images/bg.webp" type="image/webp">
+        <img src="./assets/images/bg.png" alt="" width="1400" height="953" />
+      </picture>
+    </div>
+
+    <div class="fixed">
+      <div class="fixed__button">
         <a href="#"><span>お申し込みはこちら</span></a>
       </div>
-      <div class="cta-icon">
-        <img src="./assets/images/icon-arrow-yellow.svg" alt="" width="" height="" />
-      </div>
-    </div> -->
+      <a href="#" class="fixed__totop">
+        <img src="./assets/images/icon-arrow-yellow.svg" alt="トップへ戻る" width="36" height="36" />
+      </a>
+    </div>
 
     <section class="fv layout-fv">
       <div class="fv__inner inner">
@@ -139,12 +155,15 @@
                 <source srcset="./assets/images/read_pc@2x.webp" type="image/webp" media="(min-width: 768px)" />
                 <source srcset="./assets/images/read_pc@2x.png" media="(min-width: 768px)" />
                 <source srcset="./assets/images/read_sp@2x.webp" type="image/webp" />
-                <img src="./assets/images/read_sp@2x.png" alt="" width="" height="" />
+                <img src="./assets/images/read_sp@2x.png" alt="受講無料！需要高まる「成長産業分野」に、スキルを磨いて挑戦するチャンス！" width="310"
+                  height="104" />
               </picture>
             </div>
             <div class="fv__title">
-              <source srcset="./assets/images/fv-title_pc.svg" media="(min-width: 768px)" />
-              <img src="./assets/images/fv-title_sp.svg" alt="" width="" height="" />
+              <picture>
+                <source srcset="./assets/images/fv-title_pc.svg" media="(min-width: 768px)" />
+                <img src="./assets/images/fv-title_sp.svg" alt="「これから」は、あなたが創っていく" width="342" height="99" />
+              </picture>
             </div>
           </div>
           <div class="fv__sub">
@@ -174,15 +193,15 @@
           <source srcset="./assets/images/fv_pc@2x.webp" type="image/webp" media="(min-width: 768px)" />
           <source srcset="./assets/images/fv_pc@2x.png" media="(min-width: 768px)" />
           <source srcset="./assets/images/fv_sp1@2x.webp" type="image/webp" />
-          <img src="./assets/images/fv_sp1@2x.png" alt="" width="" height="" />
+          <img src="./assets/images/fv_sp@2x.png" alt="10名の男女が並んでいる様子" width="375" height="207" />
         </picture>
       </div>
       <div class="fv__banner">
-        <img src="./assets/images/banner-fv.svg" alt="" width="" height="" />
+        <img src="./assets/images/banner-fv.svg" alt="前期募集開始！！2024.12.31(月)" width="460" height="158" />
       </div>
     </section>
 
-    <section class="news layout-common">
+    <section class="news layout-news">
       <div class="news__inner inner">
         <div class="news__container">
           <div class="news__head">
@@ -193,25 +212,30 @@
           </div>
           <ul class="news__list">
             <li class="news__list-item news-item">
-              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
-              <span class="news-item__tag">new</span>
-              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+              <div class="news-item__data-wrap">
+                <time class="news-item__data" datetime="2023-12-26">2023.12.26</time>
+                <span class="news-item__tag">new</span>
+              </div>
+              <a class="news-item__title" href="#">＜お知らせ＞年末年始の営業に関して</a>
             </li>
             <li class="news__list-item news-item">
-              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
-              <span class="news-item__tag">new</span>
-              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+              <div class="news-item__data-wrap"><time class="news-item__data" datetime="2023-12-26">2023.12.26</time>
+                <span class="news-item__tag">new</span>
+              </div>
+              <a class="news-item__title" href="#">＜お知らせ＞年末年始の営業に関して</a>
             </li>
             <li class="news__list-item news-item">
-              <time class="news-item__date" datetime="2023-12-26">2023.12.26</time>
-              <p class="news-item__title">＜お知らせ＞年末年始の営業に関して</p>
+              <div class="news-item__data-wrap">
+                <time class="news-item__data" datetime="2023-12-26">2023.12.26</time>
+              </div>
+              <a class="news-item__title" href="#">＜お知らせ＞年末年始の営業に関して</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="aboutus layout-aboutus layout-common">
+    <section class="aboutus layout-aboutus">
       <div class="aboutus__inner inner">
         <div class="aboutus__container">
           <div class="aboutus__head">
@@ -227,13 +251,13 @@
               非正規労働者等へキャリア形成の機会を提供し、雇用の安定化と成長産業分野への人材シフトを促進するため、eラーニング等による新たな資格やスキルの取得支援及び職業紹介等の就職支援を一体的に行う事業です。</p>
             <ul class="aboutus__list">
               <li class="aboutus__item check-item">
-                働きながらスキル習得！<span>正社員を目指したいあなたへ</span>
+                働きながらスキル習得！　<span>正社員を目指したいあなたへ</span>
               </li>
               <li class="aboutus__item check-item">
-                スキマ時間を活用！<span>家事や育児で忙しいあなたへ</span>
+                スキマ時間を活用！　<span>家事や育児で忙しいあなたへ</span>
               </li>
               <li class="aboutus__item check-item">
-                キャリアチェンジを目指して！<span>就活を始めようとしているあなたへ</span>
+                キャリアチェンジを目指して！　<span>就活を始めようとしているあなたへ</span>
               </li>
             </ul>
             <p class="aboutus__text-line">国家資格を持ったキャリアアドバイザーと就業支援に精通したメンターが、<br
@@ -249,7 +273,7 @@
         <div class="point__container">
           <div class="point__head">
             <hgroup class="section-head">
-              <h2 class="section-head__main">当事業の特徴</h2>
+              <h2 class="section-head__main">当事業のポイント</h2>
               <p class="section-head__sub">point</p>
             </hgroup>
           </div>
@@ -261,7 +285,7 @@
                     <p class="item-head">point / 01</p>
                   </div>
                   <div class="point-item__img">
-                    <img src="./assets/images/point01.svg" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/point01.svg" alt="" width="75" height="62" loading="lazy" />
                   </div>
                 </div>
                 <h3 class="point-item__title">すき間時間を活かして学べる<br>eラーニング</h3>
@@ -275,7 +299,7 @@
                     <p class="item-head">point / 02</p>
                   </div>
                   <div class="point-item__img">
-                    <img src="./assets/images/point02.svg" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/point02.svg" alt="" width="82" height="63" loading="lazy" />
                   </div>
                 </div>
                 <h3 class="point-item__title">専任キャリアアドバイザーと<br>メンターにいつでも相談</h3>
@@ -289,7 +313,7 @@
                     <p class="item-head">point / 03</p>
                   </div>
                   <div class="point-item__img">
-                    <img src="./assets/images/point03.svg" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/point03.svg" alt="" width="92" height="62" loading="lazy" />
                   </div>
                 </div>
                 <h3 class="point-item__title">受講生専用の<br>求人をご用意</h3>
@@ -304,7 +328,7 @@
                     <p class="item-head">point / 04</p>
                   </div>
                   <div class="point-item__img">
-                    <img src="./assets/images/point04.svg" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/point04.svg" alt="" width="50" height="62" loading="lazy" />
                   </div>
                 </div>
                 <h3 class="point-item__title">合同説明会や<br>受講生同士の交流会</h3>
@@ -341,7 +365,7 @@
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -349,9 +373,9 @@
                         <ul class="course-item__description-skill-wrap">
                           <li class="course-item__description-skill">Linux サーバー構築</li>
                           <li class="course-item__description-skill">AWS基礎</li>
+                          <li class="course-item__description-skill">アルゴリズム</li>
                           <li class="course-item__description-skill">クラウド導入基礎</li>
                           <li class="course-item__description-skill">Linux サーバー構築</li>
-                          <li class="course-item__description-skill">アルゴリズム</li>
                         </ul>
                       </div>
                       <p class="course-item__description-text">
@@ -382,7 +406,7 @@
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -422,7 +446,7 @@
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -462,7 +486,7 @@
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -502,7 +526,7 @@
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -544,12 +568,12 @@
                     <h4 class="course-item__title">医療・介護科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">80名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -583,12 +607,12 @@
                     <h4 class="course-item__title">トラベルマネジメント科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">80名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -620,12 +644,12 @@
                     <h4 class="course-item__title">オフィススペシャリスト科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">80名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -658,12 +682,12 @@
                     <h4 class="course-item__title">簿記科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">80名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -695,12 +719,12 @@
                     <h4 class="course-item__title">人事総務科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">120名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
                     <div class="course-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="course-item__description">
                       <div class="course-item__description-skills">
@@ -733,7 +757,7 @@
       </div>
     </section>
 
-    <section class="flow layout-common">
+    <section class="flow layout-flow">
       <div class="flow__inner inner">
         <div class="flow__head">
           <hgroup class="section-head">
@@ -751,7 +775,7 @@
                 <div class="flow-item__img">
                   <picture>
                     <source srcset="./assets/images/flow01@2x.webp" type="image/webp">
-                    <img src="./assets/images/flow01@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/flow01@2x.png" alt="携帯を持つ手の写真" width="300" height="258" loading="lazy" />
                   </picture>
                 </div>
                 <h3 class="flow-item__title">簡単入力で日程調整</h3>
@@ -766,7 +790,8 @@
                 <div class="flow-item__img">
                   <picture>
                     <source srcset="./assets/images/flow02@2x.webp" type="image/webp">
-                    <img src="./assets/images/flow02@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/flow02@2x.png" alt="オンラインで面接を受けている写真" width="300" height="258"
+                      loading="lazy" />
                   </picture>
                 </div>
                 <h3 class="flow-item__title">事業説明と面談</h3>
@@ -782,7 +807,8 @@
                 <div class="flow-item__img">
                   <picture>
                     <source srcset="./assets/images/flow03@2x.webp" type="image/webp">
-                    <img src="./assets/images/flow03@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/flow03@2x.png" alt="e-Learningで学習している様子" width="300" height="258"
+                      loading="lazy" />
                   </picture>
                 </div>
                 <h3 class="flow-item__title">e-Learningでスキル取得</h3>
@@ -797,7 +823,8 @@
                 <div class="flow-item__img">
                   <picture>
                     <source srcset="./assets/images/flow04@2x.webp" type="image/webp">
-                    <img src="./assets/images/flow04@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/flow04@2x.png" alt="アドバイザーを面談している様子" width="300" height="258"
+                      loading="lazy" />
                   </picture>
                 </div>
                 <h3 class="flow-item__title">就職に向けたサポート</h3>
@@ -812,7 +839,7 @@
       </div>
     </section>
 
-    <section class="conditions layout-common">
+    <section class="conditions layout-conditions">
       <div class="conditions__inner inner">
         <div class="conditions__container">
           <div class="conditions__head">
@@ -838,7 +865,7 @@
       </div>
     </section>
 
-    <section class="event layout-common layout-event">
+    <section class="event layout-event">
       <div class="event__inner inner">
         <div class="event__container">
           <div class="event__head">
@@ -854,13 +881,14 @@
                   <div class="event-item__img">
                     <picture>
                       <source srcset="./assets/images/dammy01.webp" type="image/webp">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </picture>
                   </div>
                   <div class="event-item__body">
                     <h3 class="event-item__title">受講コース別交流・相談会<br>コース別集合型学習会</h3>
                     <p class="event-item__text text">
-                      各コースを受講して得られるスキルの職種を募集している企業から直接、会社紹介や募集内容の紹介を行います！<br>求人票だけでは伝わりづらい、企業の魅力をしっかり聞ける貴重な機会に！<br>参加者からの質問も可能です。
+                      各コースを受講して得られるスキルの職種を募集している企業から直接、会社紹介や募集内容の紹介を行います！<br>求人票だけでは伝わりづらい、企業の魅力を<br
+                        class="u-mobile">しっかり聞ける貴重な機会に！<br>参加者からの質問も可能です。
                     </p>
                   </div>
                 </div>
@@ -870,11 +898,11 @@
                   <div class="event-item__img">
                     <picture>
                       <source srcset="./assets/images/dammy01.webp" type="image/webp">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </picture>
                   </div>
                   <div class="event-item__body">
-                    <h3 class="event-item__title">コース別合同企業説明会～<br>7月以降毎月開催！</h3>
+                    <h3 class="event-item__title">産業分野別セミナー</h3>
                     <p class="event-item__text text">
                       成長産業の各分野へのキャリアチェンジのために必要な知識をGETしよう！将来の自分の姿を具体化するために、分野別業界セミナーを開催します！<br>※前期・後期の各一回ずつ実施予定。<br>※日程、詳細が決まり次第、コース参加者マイページにてお知らせいたします。
                     </p>
@@ -886,7 +914,7 @@
                   <div class="event-item__img">
                     <picture>
                       <source srcset="./assets/images/dammy01.webp" type="image/webp">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </picture>
                   </div>
                   <div class="event-item__body">
@@ -904,24 +932,26 @@
       </div>
     </section>
 
-    <section class="movie layout-common layout-movie">
-      <div class="movie__inner inner">
-        <div class="movie__container">
-          <div class="movie__head">
-            <hgroup class="section-head--white">
-              <h2 class="section-head__main">事業説明動画</h2>
-              <p class="section-head__sub">Movie</p>
-            </hgroup>
-          </div>
-          <div class="movie__content">
-            <!-- <video src="" controls></video> -->
-            <img src="./assets/images/dammy02.png" alt="" width="" height="" />
+    <section class="movie">
+      <div class="movie__wrapper">
+        <div class="movie__inner inner">
+          <div class="movie__container">
+            <div class="movie__head">
+              <hgroup class="section-head--white">
+                <h2 class="section-head__main">事業説明動画</h2>
+                <p class="section-head__sub">Movie</p>
+              </hgroup>
+            </div>
+            <div class="movie__content">
+              <!-- <video src="" controls></video> -->
+              <img src="./assets/images/dammy02.png" alt="" width="1415" height="799" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="interview layout-common layout-interview">
+    <section class="interview layout-interview">
       <div class="interview__inner inner">
         <div class="interview__container">
           <div class="interview__head">
@@ -939,10 +969,11 @@
                   </div>
                   <div class="interview-item__top">
                     <div class="interview-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="interview-item__names">
-                      <p class="interview-item__name">A・A<span>さん</span></p>
+                      <p class="interview-item__name"><span class="interview-item__en">A・A</span><span
+                          class="interview-item__ja">さん</span></p>
                       <p class="interview-item__sex">女性</p>
                     </div>
                   </div>
@@ -966,11 +997,12 @@
                   </div>
                   <div class="interview-item__top">
                     <div class="interview-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="interview-item__names">
-                      <p class="interview-item__name">A・A<span>さん</span></p>
-                      <p class="interview-item__sex">女性</p>
+                      <p class="interview-item__name"><span class="interview-item__en">B・B</span><span
+                          class="interview-item__ja">さん</span></p>
+                      <p class="interview-item__sex">男性</p>
                     </div>
                   </div>
                   <div class="interview-item__body">
@@ -993,11 +1025,12 @@
                   </div>
                   <div class="interview-item__top">
                     <div class="interview-item__img">
-                      <img src="./assets/images/dammy01.png" alt="" width="" height="" loading="lazy" />
+                      <img src="./assets/images/dammy01.png" alt="" width="428" height="298" loading="lazy" />
                     </div>
                     <div class="interview-item__names">
-                      <p class="interview-item__name">A・A<span>さん</span></p>
-                      <p class="interview-item__sex">女性</p>
+                      <p class="interview-item__name"><span class="interview-item__en">C・C</span><span
+                          class="interview-item__ja">さん</span></p>
+                      <p class="interview-item__sex">男性</p>
                     </div>
                   </div>
                   <div class="interview-item__body">
@@ -1019,7 +1052,7 @@
       </div>
     </section>
 
-    <section class="recruit layout-recruit layout-common">
+    <section class="recruit layout-recruit">
       <div class="recruit__inner inner">
         <div class="recruit__container">
           <div class="recruit__head">
@@ -1083,7 +1116,7 @@
       </div>
     </section>
 
-    <section class="faq layout-common">
+    <section class="faq layout-faq">
       <div class="faq__inner inner">
         <div class="faq__head">
           <hgroup class="section-head">
@@ -1092,8 +1125,8 @@
           </hgroup>
         </div>
         <dl class="faq__list">
-          <div class="faq-item is-open">
-            <dt class="faq-item__question js-faq">
+          <div class="faq-item">
+            <dt class="faq-item__question is-open js-faq">
               Q<span>対象要件を教えてください。</span>
             </dt>
             <dd class="faq-item__answer">
@@ -1142,8 +1175,9 @@
                 <dd class="footer__contact-description">ADE.JP.growup-career@jp.adecco.com</dd>
               </div>
               <div class="footer__contact-wrap">
-                <dt class="footer__contact-term">受付時間</dt>
-                <dd class="footer__contact-description">月・火・水・木・金 10:00～20:00 / <wbr>土曜日10:00～17:00<br>(日曜日・祝日及び年末年始を除く)
+                <dt class="footer__contact-term--large">受付時間</dt>
+                <dd class="footer__contact-description--large">月・火・水・木・金 10:00～20:00 /
+                  <span>土曜日10:00～17:00</span><br>(日曜日・祝日及び年末年始を除く)
                 </dd>
               </div>
             </dl>
@@ -1169,7 +1203,7 @@
                   <td>●</td>
                   <td>●</td>
                   <td>ー</td>
-                  <td>―</td>
+                  <td>ー</td>
                 </tr>
                 <tr>
                   <td>10:00～17:00</td>
@@ -1190,14 +1224,15 @@
             <div class="footer__banners">
               <div class="footer__banner">
                 <a href="#">
-                  <img src="./assets/images/f-banner01.svg" alt="" width="" height="" loading="lazy" />
+                  <img src="./assets/images/f-banner01.svg" alt="東京都" width="155" height="54" loading="lazy" />
                 </a>
               </div>
               <div class="footer__banner">
                 <a href="#">
                   <picture>
                     <source srcset="./assets/images/f-banner02@3x.webp" type="image/webp">
-                    <img src="./assets/images/f-banner02@3x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/f-banner02@3x.png" alt="公共財団法人 東京しごと財団" width="155" height="54"
+                      loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -1205,19 +1240,20 @@
                 <a href="#">
                   <picture>
                     <source srcset="./assets/images/f-banner03@3x.webp" type="image/webp">
-                    <img src="./assets/images/f-banner03@3x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/f-banner03@3x.png" alt="東京しごとセンター" width="155" height="54"
+                      loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <ul class="footer__nav">
-              <li class="footer__nav-item">ホーム</li>
-              <li class="footer__nav-item">受講の流れ</li>
-              <li class="footer__nav-item">新着情報</li>
-              <li class="footer__nav-item">よくあるご質問</li>
-              <li class="footer__nav-item">事業概要</li>
-              <li class="footer__nav-item">お問い合わせ</li>
-              <li class="footer__nav-item">コース紹介</li>
+              <li class="footer__nav-item"><a href="#">ホーム</a></li>
+              <li class="footer__nav-item"><a href="#">受講の流れ</a></li>
+              <li class="footer__nav-item"><a href="#">新着情報</a></li>
+              <li class="footer__nav-item"><a href="#">よくあるご質問</a></li>
+              <li class="footer__nav-item"><a href="#">事業概要</a></li>
+              <li class="footer__nav-item"><a href="#">お問い合わせ</a></li>
+              <li class="footer__nav-item"><a href="#">コース紹介</a></li>
             </ul>
           </div>
           <div class="footer__app-block">
@@ -1225,7 +1261,8 @@
               <div class="footer__app-img">
                 <picture>
                   <source srcset="./assets/images/banner04@2x.webp" type="image/webp">
-                  <img src="./assets/images/banner04@2x.png" alt="" width="" height="" loading="lazy" />
+                  <img src="./assets/images/banner04@2x.png" alt="「働きたい」に寄り添うアプリTokyo就職Navi" width="142" height="46"
+                    loading="lazy" />
                 </picture>
               </div>
               <div class="footer__app-wrap">
@@ -1236,18 +1273,20 @@
             </div>
             <div class="footer__app-bottom">
               <div class="footer__app-link">
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/app@2x.webp" type="image/webp">
-                    <img src="./assets/images/app@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/app@2x.png" alt="AppStoreからダウンロード" width="137" height="41"
+                      loading="lazy" />
                   </picture>
                 </a>
               </div>
               <div class="footer__app-link">
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/google@2x.webp" type="image/webp">
-                    <img src="./assets/images/google@2x.png" alt="" width="" height="" loading="lazy" />
+                    <img src="./assets/images/google@2x.png" alt="GooglePlayで手に入れよう" width="137" height="41"
+                      loading="lazy" />
                   </picture>
                 </a>
               </div>

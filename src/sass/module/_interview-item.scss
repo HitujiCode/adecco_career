@@ -7,12 +7,11 @@
 }
 
 .interview-item__top {
-  margin-top: rem(6);
+  margin-top: rem(10);
   display: flex;
   gap: rem(18);
   align-items: center;
   @include mq("md") {
-    margin-top: rem(9);
     display: revert;
     gap: rem(20);
   }
@@ -26,7 +25,7 @@
 }
 
 .interview-item__img img {
-  border-radius: 0 20px 0 20px;
+  border-radius: 0 rem(20) 0 rem(20);
   aspect-ratio: 104/110;
   width: 100%;
   height: 100%;
@@ -39,6 +38,7 @@
 .interview-item__names {
   display: flex;
   gap: rem(16);
+  align-items: center;
   @include mq("md") {
     margin-top: rem(20);
     gap: rem(20);
@@ -48,9 +48,6 @@
 
 .interview-item__name {
   font-size: rem(22);
-  font-weight: $bold;
-  font-family: $second-font;
-  font-style: italic;
   color: $blue;
   line-height: 1;
   @include mq("md") {
@@ -58,7 +55,17 @@
   }
 }
 
-.interview-item__name span {
+.interview-item__en {
+  display: inline-block;
+  line-height: 1;
+  font-weight: $bold;
+  font-family: $second-font;
+  font-style: italic;
+  letter-spacing: -0.25em;
+}
+
+.interview-item__ja {
+  margin-left: 0.3em;
   font-size: rem(16);
   font-weight: $bold;
   @include mq("md") {
@@ -67,6 +74,8 @@
 }
 
 .interview-item__sex {
+  position: relative;
+  top: 2px;
   font-size: 9px;
   font-weight: $medium;
   color: $blue;
@@ -75,6 +84,7 @@
   padding: rem(3) rem(6);
   @include mq("md") {
     font-size: rem(14);
+    padding-bottom: rem(5);
   }
 }
 
@@ -90,7 +100,10 @@
   gap: rem(15);
   font-size: rem(14);
   color: $gray;
-  line-height: 1;
+  line-height: calc(20 / 14);
+  @include mq("md") {
+    font-size: clamp(10px, calc(14 / 1400 * 100%), rem(14));
+  }
 }
 
 .interview-item__course {
@@ -104,9 +117,20 @@
 
 .interview-item__text {
   margin-top: rem(20);
+  @include mq("md") {
+    font-feature-settings: "palt";
+  }
 }
 
 .interview-item__button {
   margin-top: rem(20);
   text-align: right;
+}
+
+@media (any-hover: hover) {
+  .interview-item:hover {
+  }
+
+  .interview-item:hover .interview-item__button a {
+  }
 }

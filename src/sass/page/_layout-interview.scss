@@ -2,9 +2,7 @@
 
 .layout-interview {
   padding-top: rem(32);
-  padding-bottom: rem(32);
   @include mq("md") {
-    padding-top: rem(60);
-    padding-bottom: rem(60);
+    padding-block: rem(60);
   }
 }

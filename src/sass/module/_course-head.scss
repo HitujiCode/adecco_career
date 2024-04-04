@@ -6,10 +6,10 @@
   font-size: rem(17);
   font-weight: $bold;
   line-height: 1;
-  padding-bottom: rem(8);
+  padding-bottom: rem(15);
   @include mq("md") {
     font-size: rem(22);
-    padding-bottom: rem(16);
+    padding-bottom: rem(25);
   }
 }
 
@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: rem(4);
-  background-image: linear-gradient(to right, $yellow 40%, transparent 40%);
+  background-image: linear-gradient(to right, $yellow 45%, transparent 45%);
   @include mq("md") {
     height: rem(6);
   }
@@ -31,5 +31,5 @@
 }
 
 .course-head--blue::before {
-  background-image: linear-gradient(to right, $blue 40%, transparent 40%);
+  background-image: linear-gradient(to right, $blue 45%, transparent 45%);
 }

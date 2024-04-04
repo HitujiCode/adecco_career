@@ -9,20 +9,23 @@
   content: "";
   position: absolute;
   top: 0;
-  inset-inline: 0;
 }
 
 .event::before {
+  right: 0;
+  width: 93%;
   height: rem(158);
   background-color: $bg-ocher;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
   @include mq("md") {
+    width: 100%;
     height: rem(167);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
   }
 }
 
 .event::after {
+  inset-inline: 0;
   height: rem(200);
   background-color: $bg-beige;
   clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
@@ -65,7 +68,7 @@
 }
 
 .event__item + .event__item {
-  margin-top: rem(20);
+  margin-top: rem(25);
   @include mq("md") {
     margin-top: 0;
   }

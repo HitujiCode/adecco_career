@@ -1,26 +1,34 @@
 @use "global" as *;
 
-.cta {
+.fixed {
   position: fixed;
   bottom: 0;
   inset-inline: 0;
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
   gap: rem(16);
   padding-right: rem(5);
   z-index: $cta;
   @include mq("md") {
     left: initial;
     writing-mode: vertical-rl;
-    padding-right: rem(15);
+    padding-right: rem(10);
     gap: rem(9);
+    width: fit-content;
+    align-items: center;
   }
 }
 
-.cta-button {
+.fixed__button {
+  max-width: rem(318);
   width: 100%;
+  @include mq("md") {
+    max-width: initial;
+  }
 }
 
-.cta-button a {
+.fixed__button a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +37,7 @@
   color: $white;
   line-height: 1;
   background-color: $red;
-  border-radius: 10px 10px 0 0;
+  border-radius: rem(10) rem(10) 0 0;
   height: rem(36);
   @include mq("md") {
     height: fit-content;
@@ -37,24 +45,26 @@
     padding-right: rem(13);
     padding-bottom: rem(13);
     padding-left: rem(14);
-    border-radius: 10px;
+    border-radius: rem(10);
+    transition: background-color 0.3s;
   }
 }
 
-.cta-button span {
+.fixed__button span {
   position: relative;
   padding-right: rem(27);
   display: grid;
   justify-content: center;
   @include mq("md") {
     padding-right: 0;
-    padding-bottom: rem(27);
+    padding-bottom: rem(32);
     justify-content: initial;
     align-items: center;
+    letter-spacing: 0.2em;
   }
 }
 
-.cta-button span::after {
+.fixed__button span::after {
   content: "";
   position: absolute;
   right: 0;
@@ -70,16 +80,24 @@
   }
 }
 
-.cta-button .cta-icon {
+.fixed__totop {
+  display: inline-block;
   width: rem(36);
   @include mq("md") {
     width: rem(50);
   }
 }
 
-.cta-icon img {
+.fixed__totop img {
   aspect-ratio: 1;
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media (any-hover: hover) {
+  .fixed__button a:hover {
+    background-color: $blue;
+    opacity: 1;
+  }
 }

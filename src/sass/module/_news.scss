@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .news {
+  background-color: $white;
 }
 
 .news__inner.inner {
@@ -18,11 +19,15 @@
   justify-content: center;
   @include mq("md") {
     justify-content: flex-start;
+    padding-top: rem(16);
   }
 }
 
 .news__list {
   margin-top: rem(32);
+  @include mq("md") {
+    margin-top: 0;
+  }
 }
 
 .news__list-item {

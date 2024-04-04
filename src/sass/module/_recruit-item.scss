@@ -8,6 +8,9 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  @include mq("md") {
+    padding: rem(22) rem(24);
+  }
 }
 
 .recruit-item__title {
@@ -17,13 +20,20 @@
   font-feature-settings: "palt";
   line-height: calc(20 / 15);
   border: 1px solid $yellow;
-  padding: rem(4) rem(29);
-  width: fit-content;
+  padding: rem(4) rem(16);
+  @include mq("md") {
+    width: fit-content;
+    padding: rem(3) rem(10);
+    font-size: clamp(10px, calc(15 / 1400 * 100%), rem(15));
+  }
 }
 
 .recruit-item__list {
   margin-top: rem(14);
   width: 100%;
+  @include mq("md") {
+    margin-top: rem(18);
+  }
 }
 
 .recruit-item__item {
@@ -32,6 +42,9 @@
   color: $gray;
   line-height: calc(20 / 14);
   padding-left: rem(12);
+  @include mq("md") {
+    font-size: clamp(10px, calc(14 / 1400 * 100%), rem(14));
+  }
 }
 
 .recruit-item__item::before {
@@ -44,4 +57,7 @@
   height: rem(6);
   background-color: $blue;
   border-radius: 50%;
+  @include mq("md") {
+    top: 53%;
+  }
 }

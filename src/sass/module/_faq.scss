@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .faq {
+  background-image: linear-gradient(to bottom, $white 62%, transparent 62%);
 }
 
 .faq__inner.inner {

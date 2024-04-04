@@ -1,9 +1,19 @@
 @use "global" as *;
 
 .movie {
-  background-image: linear-gradient(to bottom, transparent calc(212 / 305 * 100%), $white calc(212 / 305 * 100%)),
+  padding-block: rem(48);
+  background-color: $white;
+  @include mq("md") {
+    padding-block: rem(80);
+  }
+}
+
+.movie__wrapper {
+  padding-top: rem(32);
+  background-image: linear-gradient(to bottom, transparent calc(212 / 303 * 100%), $white calc(212 / 303 * 100%)),
     linear-gradient(to right, $darkblue calc(137 / 375 * 100%), $blue calc(137 / 375 * 100%));
   @include mq("md") {
+    padding-block: rem(60);
     background-image: linear-gradient(
       to right,
       $darkblue calc(274 / 1400 * 100%),
@@ -23,7 +33,7 @@
     display: flex;
     align-items: center;
     gap: rem(132);
-    padding-left: rem(100);
+    padding-left: calc(140 / 1400 * 100vw);
   }
 }
 
@@ -43,7 +53,7 @@
 }
 
 .movie__content video {
-  border-radius: 15px;
+  border-radius: rem(15);
 }
 
 .movie__content img {

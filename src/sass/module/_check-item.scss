@@ -2,27 +2,31 @@
 
 .check-item {
   position: relative;
-  padding-left: rem(28);
+  padding-inline: rem(28);
   font-size: rem(14);
   font-weight: $bold;
   line-height: calc(23 / 14);
   @include mq("md") {
-    font-size: rem(15);
+    font-size: clamp(10px, calc(15 / 1400 * 100vw), rem(15));
     line-height: 2;
+    padding-right: 0;
   }
 }
 
 .check-item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: rem(2);
   left: 0;
-  width: rem(19);
+  width: rem(20);
   height: rem(19);
   background-image: url("../images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @include mq("md") {
+    top: rem(5);
+  }
 }
 
 .check-item span {
@@ -31,4 +35,7 @@
 
 .check-item + .check-item {
   margin-top: rem(15);
+  @include mq("md") {
+    margin-top: 0;
+  }
 }

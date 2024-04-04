@@ -2,7 +2,7 @@
 
 .interview {
   position: relative;
-  background-color: rgba($bg-lightgray, 0.37);
+  background-color: $bg-lightgray2;
 }
 
 .interview::before,
@@ -10,13 +10,14 @@
   content: "";
   position: absolute;
   top: 0;
-  inset-inline: 0;
 }
 
 .interview::before {
+  right: 0;
+  width: 93%;
   height: rem(158);
   background-color: $darkblue;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
   @include mq("md") {
     height: rem(167);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
@@ -24,6 +25,7 @@
 }
 
 .interview::after {
+  inset-inline: 0;
   height: rem(200);
   background-color: $blue;
   clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);

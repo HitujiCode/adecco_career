@@ -14,9 +14,10 @@
 .reception-table td {
   line-height: 1;
   text-align: center;
-  padding: rem(15) 0;
+  padding: rem(13) 0;
   @include mq("md") {
-    padding: rem(12) 0;
+    padding-top: rem(16);
+    padding-bottom: rem(14);
   }
 }
 
@@ -24,7 +25,11 @@
 .reception-table td:nth-child(1) {
   border-right: 1px solid $white;
   width: calc(100 / 345 * 100%);
+  @include mq("md") {
+    width: calc(130 / 485 * 100%);
+  }
 }
+
 .reception-table th {
   font-size: rem(14);
   padding-block: rem(11);
@@ -44,5 +49,19 @@
   font-size: rem(13);
   @include mq("md") {
     font-size: rem(16);
+  }
+}
+
+.reception-table th:nth-child(2),
+.reception-table td:nth-child(2) {
+  @include mq("md") {
+    padding-left: rem(6);
+  }
+}
+
+.reception-table th:nth-child(8),
+.reception-table td:nth-child(8) {
+  @include mq("md") {
+    padding-right: rem(6);
   }
 }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .aboutus {
-  background-color: rgba($yellow, 0.1);
+  background-color: $bg-ivory;
 }
 
 .aboutus__inner.inner {
@@ -19,6 +19,10 @@
 
 .aboutus__content {
   margin-top: rem(32);
+  @include mq("md") {
+    max-width: calc(1000 / 1400 * 100vw);
+    margin-inline: auto;
+  }
 }
 
 .aboutus__title {
@@ -41,17 +45,25 @@
   font-size: rem(15);
   line-height: 2;
   text-align: justify;
+  @include mq("md") {
+    font-size: clamp(10px, calc(15 / 1400 * 100vw), rem(15));
+  }
 }
 
 .aboutus__list {
   margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(30);
+    display: grid;
+    justify-content: center;
+  }
 }
 
 .aboutus__item {
 }
 
 .aboutus__text-line {
-  margin-top: rem(20);
+  margin-top: rem(30);
   font-size: rem(17);
   font-weight: $bold;
   line-height: calc(30 / 17);
@@ -64,6 +76,8 @@
   text-align: center;
   @include mq("md") {
     font-size: rem(20);
+    line-height: 1.5;
+    padding-block: rem(24);
   }
 }
 

@@ -3,9 +3,9 @@
 .layout-event {
   padding-top: rem(32);
   padding-bottom: rem(32);
-  background-color: rgba($beige, 0.37);
+  background-color: $bg-lightbeige;
   @include mq("md") {
-    padding-top: rem(60);
+    padding-top: rem(80);
     padding-bottom: rem(60);
   }
 }
