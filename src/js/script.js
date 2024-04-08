@@ -44,4 +44,63 @@ jQuery(function ($) {
     $(this).next().slideToggle();
     $(this).toggleClass("is-open");
   });
+
+  // スムーススクロール
+  $(function () {
+    const headerHeight = $(".js-header").height();
+
+    $('a[href^="#"]').click(function (e) {
+      e.preventDefault();
+      const href = $(this).attr("href");
+      const target = $(href == "#" || href == "" ? "html" : href);
+      const position = target.offset().top - headerHeight;
+
+      $("html, body").animate(
+        {
+          scrollTop: position,
+        },
+        400,
+        "swing",
+        function () {
+          // スクロール完了後に位置を再計算
+          const diff = target.offset().top - headerHeight;
+          // 計算された位置が異なる場合は、再度スクロール
+          if (diff !== position) {
+            $("html, body").animate(
+              {
+                scrollTop: diff,
+              },
+              10,
+              "swing"
+            );
+          }
+        }
+      );
+    });
+  });
+
+  // スクロールに応じてヘッダーにcurrentクラスを付与
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      const currentPosition =
+        $(window).scrollTop() + $(".js-header").outerHeight() + 200;
+
+      $("section").each(function () {
+        const sectionTop = $(this).offset().top;
+        const sectionHeight = $(this).outerHeight();
+        const nextSectionTop =
+          $(this).next("section").length > 0
+            ? $(this).next("section").offset().top
+            : $(document).height();
+
+        if (currentPosition >= sectionTop && currentPosition < nextSectionTop) {
+          $(".header__nav-item").removeClass("is-current");
+          const id = $(this).attr("id");
+          $('.header__nav-item a[href="#' + id + '"]')
+            .parent()
+            .addClass("is-current");
+        }
+      });
+    });
+  });
 });

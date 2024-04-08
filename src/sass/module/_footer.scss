@@ -351,3 +351,8 @@
   color: $black;
   line-height: 1;
 }
+
+@media (any-hover: hover) {
+  .footer__nav-item a:hover {
+  }
+}

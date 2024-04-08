@@ -48,6 +48,8 @@
   color: $blue;
   line-height: calc(26 / 18);
   text-align: center;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
   @include mq("md") {
     margin-top: rem(14);
   }

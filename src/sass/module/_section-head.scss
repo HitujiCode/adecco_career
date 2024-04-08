@@ -24,7 +24,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   @include mq("md") {
     margin-top: rem(23);
     padding-left: rem(42);
@@ -39,7 +38,6 @@
   width: rem(20);
   height: rem(2);
   background-color: $yellow;
-  text-transform: uppercase;
   transform: rotate(-45deg);
   @include mq("md") {
     width: rem(41);
