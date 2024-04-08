@@ -9,8 +9,9 @@
   height: 100%;
   @include mq("md") {
     border-bottom: initial;
-    padding: rem(8) rem(34) rem(15);
-    padding-inline: calc(34 / 1400 * 100vw);
+    padding-top: rem(8);
+    padding-bottom: rem(15);
+    padding-inline: min(calc(34 / 1400 * 100vw), 34px);
   }
 }
 

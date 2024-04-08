@@ -52,6 +52,9 @@
   transition: 0.3s;
   transform: rotate(90deg);
   background-image: url("../../assets/images/icon-plus.svg");
+  transition:
+    background-image 0.3s,
+    transform 0.3s;
   @include mq("md") {
     width: rem(39);
   }
