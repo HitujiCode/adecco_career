@@ -153,49 +153,11 @@
   }
 }
 
-.course-item__foot {
-  margin-top: rem(16);
-  @include mq("md") {
-    margin-top: rem(20);
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.course-item__foot-list {
-  @include mq("md") {
-    display: flex;
-    gap: rem(20);
-    padding-left: rem(4);
-  }
-}
-
-.course-item__foot-item {
-  font-size: rem(14);
-  line-height: calc(23 / 14);
-  padding-left: rem(11);
-  position: relative;
-  @include mq("md") {
-    font-size: clamp(10px, calc(14 / 1400 * 100vw), rem(14));
-  }
-}
-
-.course-item__foot-item::before {
-  content: "";
-  position: absolute;
-  top: rem(10);
-  left: 0;
-  width: rem(5);
-  aspect-ratio: 1;
-  background-color: $ocher;
-  border-radius: 50%;
-}
-
 .course-item__foot-button {
   margin-top: rem(15);
   text-align: right;
   @include mq("md") {
-    margin-top: 0;
+    margin-top: rem(20);
   }
 }
 

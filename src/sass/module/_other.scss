@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.other {
+}
+
+.other__inner.inner {
+}
+
+.other__container {
+  background-color: $lightaqua;
+  border-radius: 10px;
+  padding-top: rem(35);
+  padding-inline: rem(20);
+  padding-bottom: rem(40);
+  @include mq("md") {
+    border-radius: rem(79);
+    padding-top: rem(68);
+    padding-bottom: rem(58);
+  }
+}
+
+.other__head {
+  display: flex;
+  justify-content: center;
+}
+
+.other__list {
+  margin-top: rem(35);
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+  align-items: center;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    width: fit-content;
+    margin-inline: auto;
+    row-gap: rem(18);
+  }
+}
+
+.other__item {
+  max-width: rem(300);
+  width: 100%;
+  @include mq("md") {
+    max-width: initial;
+  }
+}

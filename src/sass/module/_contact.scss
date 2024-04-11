@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.contact {
+}
+
+.contact__inner.inner {
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__head {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__buttons {
+  margin-top: rem(70);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(52);
+  @include mq("md") {
+    margin-top: rem(80);
+    flex-direction: initial;
+    gap: rem(50);
+    justify-content: center;
+  }
+}
+
+.contact__button {
+  width: rem(308);
+  @include mq("md") {
+    width: rem(389);
+  }
+}
+
+@media (any-hover: hover) {
+  .contact__button a:hover {
+    opacity: 1;
+  }
+}

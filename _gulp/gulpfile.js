@@ -17,14 +17,15 @@ const imageminMozjpeg = require("imagemin-mozjpeg"); // JPEGを最適化する�
 const imageminPngquant = require("imagemin-pngquant"); // PNGを最適化するためのモジュール
 const changed = require("gulp-changed"); // 変更されたファイルのみを対象にするためのモジュール
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
-const webp = require('gulp-webp');//webp変換
-const rename = require('gulp-rename');//ファイル名変更
+const webp = require("gulp-webp"); //webp変換
+const rename = require("gulp-rename"); //ファイル名変更
 
 // 読み込み先
 const srcPath = {
   css: "../src/sass/**/*.scss",
   js: "../src/js/**/*",
   img: "../src/images/**/*",
+  font: "../src/font/**/*",
   html: ["../src/**/*.html", "!./node_modules/**"],
 };
 
@@ -34,14 +35,28 @@ const destPath = {
   css: "../dist/assets/css/",
   js: "../dist/assets/js/",
   img: "../dist/assets/images/",
+  font: "../dist/assets/font/",
   html: "../dist/",
 };
 
-const browsers = ["last 2 versions", "> 5%", "ie = 11", "not ie <= 10", "ios >= 8", "and_chr >= 5", "Android >= 5"];
+const browsers = [
+  "last 2 versions",
+  "> 5%",
+  "ie = 11",
+  "not ie <= 10",
+  "ios >= 8",
+  "and_chr >= 5",
+  "Android >= 5",
+];
 
 // HTMLファイルのコピー
 const htmlCopy = () => {
   return src(srcPath.html).pipe(dest(destPath.html));
+};
+
+// Fontファイルのコピー
+const fontCopy = () => {
+  return src(srcPath.font).pipe(dest(destPath.font));
 };
 
 const cssSass = () => {
@@ -76,11 +91,12 @@ const cssSass = () => {
       )
       // CSSプロパティをアルファベット順にソートし、未来のCSS構文を使用可能に
       .pipe(
-        postcss([cssdeclsort({
-          order: "alphabetical"
-        })]
-        ),
-        postcssPresetEnv({ browsers: 'last 2 versions' })
+        postcss([
+          cssdeclsort({
+            order: "alphabetical",
+          }),
+        ]),
+        postcssPresetEnv({ browsers: "last 2 versions" })
       )
       // メディアクエリを統合
       .pipe(mmq())
@@ -130,7 +146,7 @@ const imgImagemin = () => {
         )
       )
       .pipe(dest(destPath.img))
-      .pipe(webp())//webpに変換
+      .pipe(webp()) //webpに変換
       // 圧縮済みの画像ファイルを出力先に保存
       .pipe(dest(destPath.img))
   );
@@ -179,12 +195,23 @@ const clean = () => {
 const watchFiles = () => {
   watch(srcPath.css, series(cssSass, browserSyncReload));
   watch(srcPath.js, series(jsBabel, browserSyncReload));
+  watch(srcPath.font, series(fontCopy, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
   watch(srcPath.html, series(htmlCopy, browserSyncReload));
 };
 
 // ブラウザシンク付きの開発用タスク
-exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parallel(watchFiles, browserSyncFunc));
+exports.default = series(
+  series(cssSass, jsBabel, imgImagemin, fontCopy, htmlCopy),
+  parallel(watchFiles, browserSyncFunc)
+);
 
 // 本番用タスク
-exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy);
+exports.build = series(
+  clean,
+  cssSass,
+  jsBabel,
+  imgImagemin,
+  fontCopy,
+  htmlCopy
+);

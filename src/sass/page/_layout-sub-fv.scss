@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-sub-fv {
+  padding-bottom: rem(20);
+  @include mq("md") {
+    padding-bottom: 0;
+  }
+}

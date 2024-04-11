@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.curriculum-table {
+  border-collapse: collapse;
+  width: max-content;
+}
+
+.curriculum-table th,
+.curriculum-table td {
+  border: 1px solid $table-border;
+  padding-top: rem(12);
+  padding-bottom: rem(13);
+  text-align: center;
+}
+
+.curriculum-table td:first-child {
+  background-color: $table-bg;
+}
+
+.curriculum-table thead {
+  background-color: $ocher;
+  font-size: rem(15);
+  font-weight: $bold;
+  color: $white;
+  line-height: 1;
+}
+
+.curriculum-table th:nth-child(1),
+.curriculum-table td:nth-child(1) {
+  width: rem(37);
+}
+
+.curriculum-table th:nth-child(2),
+.curriculum-table td:nth-child(2) {
+  // width: rem(136);
+  width: rem(170);
+  padding-inline: rem(10);
+}
+
+.curriculum-table td:nth-child(2) {
+  font-feature-settings: "palt";
+  text-align: left;
+}
+
+.curriculum-table th:nth-child(3),
+.curriculum-table td:nth-child(3) {
+  width: rem(70);
+}
+
+.curriculum-table th:nth-child(4),
+.curriculum-table td:nth-child(4) {
+  width: rem(428);
+  padding-inline: rem(16);
+  text-align: justify;
+}
+
+.curriculum-table td:nth-child(1),
+.curriculum-table td:nth-child(4) {
+  font-size: rem(13);
+  line-height: calc(19 / 13);
+}
+
+.curriculum-table td:nth-child(2),
+.curriculum-table td:nth-child(3) {
+  font-size: rem(15);
+  line-height: calc(21 / 15);
+}
+
+.curriculum-table td:nth-child(4) span {
+  margin-top: rem(12);
+  display: inline-block;
+}

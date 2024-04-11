@@ -28,7 +28,7 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -40,12 +40,12 @@
       </h1>
       <div class="header__banners">
         <div class="header__banner01">
-          <a href="#">
+          <a href="https://www.metro.tokyo.lg.jp/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/images/banner01.svg" alt="東京都" width="55" height="14" />
           </a>
         </div>
         <div class="header__banner02">
-          <a href="#">
+          <a href="https://www.shigotozaidan.or.jp/" target="_blank" rel="noopener noreferrer">
             <picture>
               <source srcset="./assets/images/banner02@2x.webp" type="image/webp">
               <img src="./assets/images/banner02@2x.png" alt="公共財団法人 東京しごと財団" width="62" height="14" />
@@ -53,7 +53,7 @@
           </a>
         </div>
         <div class="header__banner03">
-          <a href="#">
+          <a href="https://www.tokyoshigoto.jp/" target="_blank" rel="noopener noreferrer">
             <picture>
               <source srcset="./assets/images/banner03@2x.webp" type="image/webp">
               <img src="./assets/images/banner03@2x.png" alt="東京しごとセンター" width="62" height="10" />
@@ -85,9 +85,9 @@
             <a href="#"><span>お問い合わせ</span></a>
           </li>
         </ul>
-        <div class="header__nav-sitemap">
-          <a href="#"><span>サイトマップ</span></a>
-        </div>
+        <!-- <div class="header__nav-sitemap"> -->
+        <!-- <a href="#"><span>サイトマップ</span></a> -->
+        <!-- </div> -->
       </nav>
       <button class="header__hamburger js-hamburger">
         <span></span>
@@ -120,9 +120,9 @@
             <li class="header__drawer-item">
               <a href="#">お問い合わせ</a>
             </li>
-            <li class="header__drawer-item">
+            <!-- <li class="header__drawer-item">
               <a href="#">サイトマップ</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -247,7 +247,7 @@
             <h3 class="aboutus__title">「成長産業分野」で働きたい方向けに、<span>eラーニング講座を提供、</span><span>就職まで徹底サポート</span>
             </h3>
             <p class="aboutus__text">
-              現在、非正規雇用を主な対象者とし、キャリア形成の機械を提供。雇用の安定化と成長産業への人材シフトを促進するため、eラーニング等による新たな資格やスキルの取得支援及び職業紹介等の支援を一体的に行う事業です。
+              非正規労働者へキャリア形成の機会を提供します。雇用の安定化と成長産業分野への人材シフトを促進するため、eラーニング等による新たな資格やスキルの取得支援及び職業紹介等の支援を一体的に行う事業です。
             </p>
             <ul class="aboutus__list">
               <li class="aboutus__item check-item">
@@ -274,7 +274,7 @@
           <div class="point__head">
             <hgroup class="section-head">
               <h2 class="section-head__main">当事業のポイント</h2>
-              <p class="section-head__sub">point</p>
+              <p class="section-head__sub">Point</p>
             </hgroup>
           </div>
           <ul class="point__list">
@@ -353,7 +353,7 @@
           </div>
           <div class="course__content">
             <div class="course__title">
-              <h3 class="course-head">デジタルコース</h3>
+              <h3 class="head">デジタルコース</h3>
             </div>
             <ul class="course__list">
               <li class="course__item">
@@ -362,7 +362,7 @@
                     <h4 class="course-item__title">ITインフラエンジニア科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">75名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -384,15 +384,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./course/engineer.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -402,7 +395,7 @@
                     <h4 class="course-item__title">Java・Python プログラミング科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">150名</dd>
+                      <dd class="course-item__capacity-num">75名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -424,25 +417,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./course/programming.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
               <li class="course__item">
                 <div class="course-item">
                   <div class="course-item__head">
-                    <h4 class="course-item__title">ITプロジェクト マネージャー養成科</h4>
+                    <h4 class="course-item__title">ITプロジェクト マネージャー科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">80名</dd>
+                      <dd class="course-item__capacity-num">40名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -453,7 +439,6 @@
                       <div class="course-item__description-skills">
                         <p class="course-item__description-head">習得を目指せるスキル</p>
                         <ul class="course-item__description-skill-wrap">
-                          <li class="course-item__description-skill">PM入門</li>
                           <li class="course-item__description-skill">PJ統合マネジメントツール・技法</li>
                           <li class="course-item__description-skill">PJスコープ・計画・コスト</li>
                           <li class="course-item__description-skill">PJ品質・リソースマネジメント</li>
@@ -464,15 +449,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./manager.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -482,7 +460,7 @@
                     <h4 class="course-item__title">Webクリエイター科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">70名</dd>
+                      <dd class="course-item__capacity-num">35名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -504,15 +482,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./creator.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -522,7 +493,7 @@
                     <h4 class="course-item__title">データサイエンス科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">50名</dd>
+                      <dd class="course-item__capacity-num">25名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -544,15 +515,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./data-science.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -560,7 +524,7 @@
           </div>
           <div class="course__content">
             <div class="course__title">
-              <h3 class="course-head--blue">資格取得コース</h3>
+              <h3 class="head--blue">資格取得コース</h3>
             </div>
             <ul class="course__list">
               <li class="course__item">
@@ -569,7 +533,7 @@
                     <h4 class="course-item__title">医療・介護科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">80名</dd>
+                      <dd class="course-item__capacity-num">50名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -590,15 +554,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./medical.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -608,7 +565,7 @@
                     <h4 class="course-item__title">トラベルマネジメント科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">80名</dd>
+                      <dd class="course-item__capacity-num">50名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -627,15 +584,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./travel.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -645,7 +595,7 @@
                     <h4 class="course-item__title">オフィススペシャリスト科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">80名</dd>
+                      <dd class="course-item__capacity-num">70名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -665,15 +615,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./office.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -683,7 +626,7 @@
                     <h4 class="course-item__title">簿記科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">80名</dd>
+                      <dd class="course-item__capacity-num">40名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -702,25 +645,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./bookkeeping.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
               <li class="course__item">
                 <div class="course-item--blue">
                   <div class="course-item__head">
-                    <h4 class="course-item__title">人事総務科</h4>
+                    <h4 class="course-item__title">人事労務科</h4>
                     <dl class="course-item__capacity-wrap">
                       <dt class="course-item__capacity-tag">定員数</dt>
-                      <dd class="course-item__capacity-num">120名</dd>
+                      <dd class="course-item__capacity-num">60名</dd>
                     </dl>
                   </div>
                   <div class="course-item__body">
@@ -740,15 +676,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="course-item__foot">
-                    <ul class="course-item__foot-list">
-                      <li class="course-item__foot-item">プログラミングを学びたい</li>
-                      <li class="course-item__foot-item">システムエンジニアを目指したい</li>
-                      <li class="course-item__foot-item">実践的なITスキルを身につけたい</li>
-                    </ul>
-                    <div class="course-item__foot-button">
-                      <a href="#" class="button-arrow">詳細はこちら</a>
-                    </div>
+                  <div class="course-item__foot-button">
+                    <a href="./human-resources.html" class="button-arrow">詳細はこちら</a>
                   </div>
                 </div>
               </li>
@@ -796,7 +725,7 @@
                 </div>
                 <h3 class="flow-item__title">事業説明と選考面談</h3>
                 <p class="flow-item__text text">
-                  国家資格を持ったキャリアアドバイザーからの事業説明と選考面談を実施。合格者は職業訓練を受けられます。※原則オンラインですが、対面での実施も可能です。
+                  キャリアアドバイザーからの事業説明と選考面談を実施します。合格者は職業訓練を受けられます。※原則オンラインですが、対面での実施も可能です。
                 </p>
               </div>
             </li>
@@ -812,7 +741,8 @@
                   </picture>
                 </div>
                 <h3 class="flow-item__title">eラーニングの受講</h3>
-                <p class="flow-item__text text">スキルの習得、資格の取得に向け、希望に応じたコース・科のeラーニングを受講。専任のキャリアアドバイザー・メンターが進捗をサポートします。</p>
+                <p class="flow-item__text text">スキルの習得、資格の取得に向け、希望に応じたコース・科目のeラーニングを受講します。専任のキャリアアドバイザー・メンターが進捗をサポートします。
+                </p>
               </div>
             </li>
             <li class="flow__item">
@@ -828,7 +758,7 @@
                 </div>
                 <h3 class="flow-item__title">就職に向けたサポート</h3>
                 <p class="flow-item__text text">
-                  eラーニング受講と並行し、カウンセリングや個別相談等を通じて、就職を支援。履歴書作りや面接対策もアドバイス。希望に合った企業、求人を紹介しマッチングを支援します。</p>
+                  eラーニング受講と並行し、カウンセリングや個別相談等を通じて、就職を支援します。希望に合った企業、求人を紹介しマッチングを支援します。</p>
               </div>
             </li>
           </ul>
@@ -1130,11 +1060,13 @@
               対象要件を教えてください。
             </dt>
             <dd class="faq-item__answer">
-              <p class="faq-item__text">①正社員として就業していない方</p>
-              <p class="faq-item__text">②非正規雇用で就業している方。または、育児等によりｅラーニング等による訓練の受講を希望し、早期の再就職を目指す求職中の方。</p>
-              <p class="faq-item__text">③都内に住んでいる方。または、都内に勤務先がある方。</p>
-              <p class="faq-item__text">④令和４年度・令和５年度に「成長産業分野キャリア形成支援事業」の受講が決定していない方。</p>
-              <p class="faq-item__text">⑤令和４年度・令和５年度に「類似事業」の受講が決定していない方。</p>
+              <ul class="faq-item__list">
+                <li class="faq-item__list-item">①正社員として就業していない方</li>
+                <li class="faq-item__list-item">②非正規雇用で就業している方。または、育児等によりｅラーニング等による訓練の受講を希望し、早期の再就職を目指す求職中の方。</li>
+                <li class="faq-item__list-item">③都内に住んでいる方。または、都内に勤務先がある方。</li>
+                <li class="faq-item__list-item">④令和４年度・令和５年度に「成長産業分野キャリア形成支援事業」の受講が決定していない方。</li>
+                <li class="faq-item__list-item">⑤令和４年度・令和５年度に「類似事業」の受講が決定していない方。</li>
+              </ul>
               <p class="faq-item__note note">※類似事業は「ひとり親向けオンライン訓練・就活支援事業」「女性ITエンジニア育成事業」「女性向けキャリアチェンジ支援事業」</p>
             </dd>
           </div>
@@ -1143,7 +1075,7 @@
               年齢制限はありますか。
             </dt>
             <dd class="faq-item__answer">
-              <p class="faq-item__text">①正社員として就業していない方</p>
+              <p class="faq-item__text">ありません。</p>
             </dd>
           </div>
           <div class="faq-item">
@@ -1151,7 +1083,137 @@
               各科目の訓練内容を教えてください。
             </dt>
             <dd class="faq-item__answer">
-              <p class="faq-item__text">①正社員として就業していない方</p>
+              <p class="faq-item__text">各コース毎の訓練内容やカリキュラムは、各コース毎の詳細ページよりご確認いただけます。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              複数のコースにお申し込みできますか。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">お申し込みはおひとり様、１コースのみとなります。</p>
+              <p class="faq-item__note note">※年度内に類似事業や複数コースを２回受講することはできません
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              申し込み後に、コースの変更は可能ですか？
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">
+                お申し込み後に実施する面接選考段階（面接選考時に使用するフォームの入力前）であれば、コースの変更は可能です。面接選考実施後は、コースの変更が出来ませんので、ご了承ください。<br>
+                なお、お申し込み後、ご希望される方には面接選考前にオンライン面談を実施させていただきます。各コースの詳しい訓練内容や選択などについて、ご相談いただけますので、ぜひご利用ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              対面での面接選考はできますか？
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">はい、可能です。事務局までご相談ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              面接選考の予約方法を教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">
+                ホームページの<a
+                  href="#"><span>「お申し込み」</span></a>より必要事項をご入力のうえ送信ください。その後、自動返信にて届くメールに、予約方法の詳細を記載しております。メールをご確認のうえ、ご予約ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              訓練の時間や進め方を教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">
+                訓練はeラーニング（動画視聴形式）で行います。訓練受講期間内であれば、24時間お好きな時間に視聴が可能です。動画は、面接選考を通過された方に別途お伝えする訓練受講用ホームページにログインし、ご視聴いただけます。<br>理解できるまで何度でもご視聴でき、再生速度も調整できます。ご自身の都合やペースに合わせて、学習を計画的に進めてください。<br>また、各コースにメンターを配置しております。メンターが各コースの効果的な学習などをサポートさせていただきますので、ぜひご活用ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              訓練受講開始時期・機材発送時期について教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">
+                面接選考を通過された順に随時メールにて受講開始日・機材発送日をお伝えさせていただきます。</p>
+              <p class="faq-item__note note">※尚、機材発送日については、発送準備の関係上、個別のご要望等は承っておりませんので、ご了承ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              自分のパソコンで視聴してもよいですか？
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">原則、貸与させていただくパソコンでのご視聴をお願いしております。</p>
+              <p class="faq-item__note note">※ご事情がある方は、事務局までご相談ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              テキストの返却は必要ですか？
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">テキストの返却は不要です。ご自身でご活用ください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              就職支援の内容を教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">受講いただく方それぞれに合ったキャリア支援をさせていただきます。<br>
+                支援内容は以下のとおりです。</p>
+              <ul class="faq-item__list">
+                <li class="faq-item__list-item">
+                  ・職務経歴書・履歴書の作成指導
+                </li>
+                <li class="faq-item__list-item">
+                  ・職業情報、求人情報のご提供
+                </li>
+                <li class="faq-item__list-item">
+                  ・応募書類の書き方や面接対策
+                </li>
+                <li class="faq-item__list-item">
+                  ・その他就職に関してのご相談
+                </li>
+              </ul>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              訓練受講中に就職（仕事）が決定した場合について教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">
+                原則、訓練は最後まで受講していただきます。就職が決定された場合は、事務局までお知らせください。
+              </p>
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-item__question js-faq">
+              事務局への連絡方法を教えてください。
+            </dt>
+            <dd class="faq-item__answer">
+              <p class="faq-item__text">ホームページの「お問い合わせ」より必要事項をご入力のうえ送信いただくか、または下記事務局までご連絡ください。<br>
+                成長産業分野キャリア形成支援事業事務局<br>
+                Tel ：<span>0120-000-000</span></p>
+              <p class="faq-item__note note">※事務局からご連絡させていただく場合は<span>（03-0000-0000）</span>になります</p>
+              <p class="faq-item__text">mail：ADE.JP.growup-career@jp.adecco.com<br>
+                時間：平日10：00～20：00<br>
+                土曜10：00～17：00(日曜日・祝日及び年末年始を除く)
+              </p>
             </dd>
           </div>
         </dl>
@@ -1168,7 +1230,7 @@
             <dl class="footer__contact-list">
               <div class="footer__contact-wrap">
                 <dt class="footer__contact-term">電話</dt>
-                <dd class="footer__contact-description"><a class="u-notel">0120-000-000</a></dd>
+                <dd class="footer__contact-description"><a class="u-notel">0120-162-057</a></dd>
               </div>
               <div class="footer__contact-wrap">
                 <dt class="footer__contact-term">E-Mail</dt>
@@ -1223,12 +1285,12 @@
           <div class="footer__nav-block">
             <div class="footer__banners">
               <div class="footer__banner">
-                <a href="#">
+                <a href="https://www.metro.tokyo.lg.jp/" target="_blank" rel="noopener noreferrer">
                   <img src="./assets/images/f-banner01.svg" alt="東京都" width="155" height="54" />
                 </a>
               </div>
               <div class="footer__banner">
-                <a href="#">
+                <a href="https://www.shigotozaidan.or.jp/" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/f-banner02@3x.webp" type="image/webp">
                     <img src="./assets/images/f-banner02@3x.png" alt="公共財団法人 東京しごと財団" width="155" height="54" />
@@ -1236,7 +1298,7 @@
                 </a>
               </div>
               <div class="footer__banner">
-                <a href="#">
+                <a href="https://www.tokyoshigoto.jp/" target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/f-banner03@3x.webp" type="image/webp">
                     <img src="./assets/images/f-banner03@3x.png" alt="東京しごとセンター" width="155" height="54" />
@@ -1256,12 +1318,13 @@
           </div>
           <div class="footer__app-block">
             <div class="footer__app-top">
-              <div class="footer__app-img">
+              <a href="https://www.tokyoshigoto.jp/sougou/recruitapp/" target="_blank" rel="noopener noreferrer"
+                class="footer__app-img">
                 <picture>
                   <source srcset="./assets/images/banner04@2x.webp" type="image/webp">
                   <img src="./assets/images/banner04@2x.png" alt="「働きたい」に寄り添うアプリTokyo就職Navi" width="142" height="46" />
                 </picture>
-              </div>
+              </a>
               <div class="footer__app-wrap">
                 <p class="footer__app-read">プッシュ通知で<br>“わたしに合った” 就活情報が届く!</p>
                 <p class="footer__app-text">就職支援アプリ 「TOKYO就職Navi」
@@ -1270,7 +1333,8 @@
             </div>
             <div class="footer__app-bottom">
               <div class="footer__app-link">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/jp/app/tokyo%E5%B0%B1%E8%81%B7navi/id1665627351" target="_blank"
+                  rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/app@2x.webp" type="image/webp">
                     <img src="./assets/images/app@2x.png" alt="AppStoreからダウンロード" width="137" height="41" />
@@ -1278,7 +1342,8 @@
                 </a>
               </div>
               <div class="footer__app-link">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=jp.shigotocenter.nohkai.tokyonavi"
+                  target="_blank" rel="noopener noreferrer">
                   <picture>
                     <source srcset="./assets/images/google@2x.webp" type="image/webp">
                     <img src="./assets/images/google@2x.png" alt="GooglePlayで手に入れよう" width="137" height="41" />

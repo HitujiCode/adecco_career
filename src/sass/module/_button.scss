@@ -47,3 +47,8 @@
     opacity: 1;
   }
 }
+
+.button--contact {
+  @extend .button;
+  background-color: $gray;
+}

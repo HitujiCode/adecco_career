@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.course-head {
+.head {
   display: inline-block;
   position: relative;
   font-size: rem(17);
@@ -13,23 +13,30 @@
   }
 }
 
-.course-head::before {
+.head::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: rem(53);
   height: rem(4);
-  background-image: linear-gradient(to right, $yellow 45%, transparent 45%);
+  background-color: $yellow;
   @include mq("md") {
     height: rem(6);
   }
 }
 
-.course-head--blue {
-  @extend .course-head;
+.head--blue,
+.head--center {
+  @extend .head;
 }
 
-.course-head--blue::before {
-  background-image: linear-gradient(to right, $blue 45%, transparent 45%);
+.head--blue::after {
+  background-color: $blue;
+}
+
+.head--center::after {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $bg-ocher;
 }

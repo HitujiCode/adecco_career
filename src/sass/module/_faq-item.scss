@@ -35,7 +35,7 @@
   line-height: 1;
   @include mq(md) {
     font-size: rem(31);
-    top: rem(4);
+    top: 0;
   }
 }
 
@@ -73,11 +73,10 @@
   }
 }
 
-.faq-item:first-child .faq-item__answer {
-  display: block;
+.faq-item__list {
 }
 
-.faq-item__text {
+.faq-item__list-item {
   font-size: rem(14);
   line-height: calc(30 / 14);
   text-indent: -1em;
@@ -86,6 +85,24 @@
     font-size: rem(16);
     line-height: calc(30 / 16);
   }
+}
+
+.faq-item:first-child .faq-item__answer {
+  display: block;
+}
+
+.faq-item__text {
+  font-size: rem(14);
+  line-height: calc(30 / 14);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(30 / 16);
+  }
+}
+
+.faq-item__text span,
+.faq-item__note span {
+  color: $red;
 }
 
 .faq-item__note {

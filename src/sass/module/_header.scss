@@ -22,6 +22,7 @@
   filter: drop-shadow(0 0 9px #00000029);
   transition: background-color 0.3s;
   @include mq("md") {
+    padding-right: rem(5);
   }
 }
 
@@ -125,10 +126,10 @@
   display: flex;
   height: inherit;
   @include mq("md") {
-    padding-right: rem(12);
+    // padding-right: rem(12);
   }
   @include mq("xl") {
-    padding-right: calc(30 / 1400 * 100vw);
+    // padding-right: calc(30 / 1400 * 100vw);
   }
 }
 

@@ -28,3 +28,10 @@
     }
   }
 }
+
+.inner--small {
+  @extend .inner;
+  @include mq("md") {
+    max-width: 1050px;
+  }
+}
