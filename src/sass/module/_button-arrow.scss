@@ -17,6 +17,8 @@
 .button-arrow::after {
   content: "";
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   width: rem(21);
   height: rem(24);
@@ -43,8 +45,8 @@
     color 0.3s;
   @include mq("md") {
     max-width: rem(326);
-    padding-top: rem(22);
-    padding-bottom: rem(23);
+    padding-top: rem(23);
+    padding-bottom: rem(22);
     padding-left: rem(20);
     padding-right: rem(50);
     display: inline-block;

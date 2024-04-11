@@ -42,7 +42,7 @@
   outline-offset: rem(-10);
   padding-top: rem(32);
   padding-bottom: rem(36);
-  padding-inline: rem(32);
+  padding-inline: rem(24);
   text-align: center;
   position: relative;
   @include mq("md") {
@@ -53,10 +53,10 @@
 }
 
 .sub-fv__head {
-  padding-bottom: rem(18);
+  padding-bottom: rem(14);
   position: relative;
   @include mq("md") {
-    padding-bottom: rem(24);
+    padding-bottom: rem(22);
   }
 }
 
@@ -88,7 +88,8 @@
   margin-top: rem(10);
   font-size: rem(21);
   font-weight: $bold;
-  line-height: 1;
+  line-height: calc(30 / 21);
+  font-feature-settings: "palt";
   @include mq("md") {
     margin-top: rem(12);
     font-size: rem(30);
