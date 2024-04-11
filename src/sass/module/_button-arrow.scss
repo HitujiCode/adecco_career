@@ -25,3 +25,53 @@
   background-position: center;
   background-size: contain;
 }
+
+.button-arrow--white {
+  @extend .button-arrow;
+  background-color: $white;
+  max-width: rem(300);
+  width: 100%;
+  padding-top: rem(11);
+  padding-bottom: rem(13);
+  padding-inline: rem(28);
+  border-radius: 44px;
+  font-size: rem(15);
+  font-weight: $bold;
+  border: 3px solid $offwhite;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  @include mq("md") {
+    max-width: rem(326);
+    padding-top: rem(22);
+    padding-bottom: rem(23);
+    padding-left: rem(20);
+    padding-right: rem(50);
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.button-arrow--white::after {
+  right: rem(15);
+  width: rem(16);
+  height: rem(14);
+  @include mq("md") {
+    right: rem(26);
+    width: rem(24);
+    height: rem(21);
+  }
+}
+
+.button-arrow--white.is-current {
+  background-color: $gray;
+  color: $yellow;
+}
+
+@media (any-hover: hover) {
+  .button-arrow--white:hover {
+    background-color: $yellow;
+    color: $white;
+    opacity: 1;
+  }
+}

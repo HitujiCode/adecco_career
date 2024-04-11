@@ -41,14 +41,18 @@
   padding-block: rem(18);
 }
 
+.button--contact {
+  @extend .button;
+  background-color: $gray;
+}
+
 @media (any-hover: hover) {
   .button:hover {
     background-color: $blue;
     opacity: 1;
   }
-}
 
-.button--contact {
-  @extend .button;
-  background-color: $gray;
+  .button--contact:hover {
+    background-color: $bg-ocher;
+  }
 }

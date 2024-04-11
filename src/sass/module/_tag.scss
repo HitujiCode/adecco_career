@@ -24,4 +24,9 @@
   font-weight: $bold;
   background-color: $bg-ocher;
   border-radius: 5px;
+  @include mq("md") {
+    font-size: clamp(12px, calc(15 / 1400 * 100vw), 15px);
+    padding-top: rem(21);
+    padding-bottom: rem(23);
+  }
 }

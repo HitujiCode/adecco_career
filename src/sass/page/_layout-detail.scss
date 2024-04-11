@@ -3,4 +3,8 @@
 .layout-detail {
   padding-top: rem(40);
   padding-bottom: rem(24);
+  @include mq("md") {
+    padding-top: rem(80);
+    padding-bottom: rem(100);
+  }
 }

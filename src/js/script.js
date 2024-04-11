@@ -1,10 +1,5 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  $(function () {
-    const height = $(".js-header").height();
-    $("main").css("margin-top", height);
-  });
-
   // ハンバーガーメニュー
   let scrollPosition = 0;
 

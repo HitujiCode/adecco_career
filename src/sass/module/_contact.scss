@@ -1,40 +1,37 @@
 @use "global" as *;
 
 .contact {
+  background-image: linear-gradient(to top, $white calc(90 / 209 * 100%), transparent calc(90 / 209 * 100%));
 }
 
 .contact__inner.inner {
 }
 
 .contact__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .contact__head {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .contact__buttons {
-  margin-top: rem(70);
+  margin-top: rem(30);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: rem(52);
+  gap: rem(12);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(40);
     flex-direction: initial;
-    gap: rem(50);
+    gap: rem(40);
     justify-content: center;
   }
 }
 
 .contact__button {
-  width: rem(308);
+  width: rem(345);
   @include mq("md") {
-    width: rem(389);
+    width: rem(513);
   }
 }
 

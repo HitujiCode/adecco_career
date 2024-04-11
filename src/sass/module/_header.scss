@@ -13,7 +13,7 @@
 
 .header__inner {
   background-color: rgba($white, 0.9);
-  padding-left: min(calc(15 / 1400 * 100vw), 15px);
+  padding-left: rem(10);
   height: inherit;
   display: flex;
   align-items: center;
@@ -22,7 +22,8 @@
   filter: drop-shadow(0 0 9px #00000029);
   transition: background-color 0.3s;
   @include mq("md") {
-    padding-right: rem(5);
+    padding-left: min(calc(15 / 1400 * 100vw), 15px);
+    // padding-right: rem(5);
   }
 }
 
@@ -175,16 +176,10 @@
   line-height: 1;
   display: flex;
   align-items: center;
-  // padding-inline: calc(38 / 1400 * 100vw);
+  padding-inline: calc(38 / 1400 * 100vw);
   height: 100%;
   transition: border 0.1s;
-  @include mq("md") {
-    padding-inline: rem(18);
-  }
-  @include mq("xl") {
-    // padding-inline: calc(30 / 1400 * 100vw);
-    padding-inline: calc(38 / 1400 * 100vw);
-  }
+  margin-left: rem(30);
 }
 
 .header__nav-sitemap span {

@@ -31,6 +31,13 @@
   @extend .head;
 }
 
+.head--center {
+  @include mq("md") {
+    font-size: rem(25);
+    padding-bottom: rem(20);
+  }
+}
+
 .head--blue::after {
   background-color: $blue;
 }

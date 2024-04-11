@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-sub-footer {
+  margin-top: rem(118);
+  @include mq("md") {
+    // margin-top: rem(200);
+    margin-top: 0;
+  }
+}

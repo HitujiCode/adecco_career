@@ -7,10 +7,9 @@
   padding-inline: rem(10);
   background-color: $white;
   @include mq("md") {
-    padding-top: rem(30);
-    padding-bottom: rem(22);
-    padding-inline: rem(32);
-    border-radius: 20px;
+    padding-block: rem(32);
+    padding-inline: rem(30);
+    border-radius: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,7 +22,7 @@
   line-height: 1;
   text-align: center;
   @include mq("md") {
-    font-size: rem(20);
+    font-size: rem(21);
   }
 }
 
@@ -50,7 +49,7 @@
   @include mq("md") {
     margin-top: rem(20);
     display: flex;
-    gap: rem(14);
+    gap: rem(18);
   }
 }
 
@@ -62,11 +61,18 @@
   display: inline-block;
   @include mq("md") {
     font-size: clamp(12px, calc(15 / 1400 * 100vw), 15px);
-    padding-right: rem(22);
-    border-right: 2px solid $black;
+    padding-right: rem(18);
+    border-right: 2px solid $bg-ocher;
     border-bottom: none;
-    width: rem(114);
+    width: rem(80);
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    padding-top: rem(2);
   }
+}
+
+.detail-item__skill-head span {
+  display: inline-block;
 }
 
 .detail-item__skills {
