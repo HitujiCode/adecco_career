@@ -32,3 +32,10 @@
     font-feature-settings: "palt";
   }
 }
+
+.tag--large {
+  @extend .tag;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}

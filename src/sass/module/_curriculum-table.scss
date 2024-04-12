@@ -48,6 +48,7 @@
   // width: rem(136);
   width: rem(170);
   padding-inline: rem(10);
+  line-break: strict;
   @include mq("md") {
     width: calc(192 / 904 * 100%);
     padding-inline: rem(14);
