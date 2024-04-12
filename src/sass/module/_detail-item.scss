@@ -53,6 +53,12 @@
   }
 }
 
+.detail-item .detail-item__skill-wrap:nth-of-type(2) {
+  @include mq("md") {
+    flex-grow: 1;
+  }
+}
+
 .detail-item__skill-head {
   font-size: rem(15);
   font-weight: $medium;

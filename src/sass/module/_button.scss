@@ -44,6 +44,13 @@
 .button--contact {
   @extend .button;
   background-color: $gray;
+  padding-block: rem(18);
+}
+
+.button--large {
+  @extend .button;
+  background-color: $red;
+  padding-block: rem(18);
 }
 
 @media (any-hover: hover) {
