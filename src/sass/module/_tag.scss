@@ -28,5 +28,7 @@
     font-size: clamp(12px, calc(15 / 1400 * 100vw), 15px);
     padding-top: rem(21);
     padding-bottom: rem(23);
+    padding-inline: rem(12);
+    font-feature-settings: "palt";
   }
 }

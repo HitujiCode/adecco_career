@@ -64,6 +64,9 @@
   width: rem(70);
   @include mq("md") {
     width: calc(95 / 904 * 100%);
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    font-feature-settings: "palt";
   }
 }
 
@@ -97,7 +100,41 @@
   }
 }
 
+.curriculum-table td:nth-child(3) span,
 .curriculum-table td:nth-child(4) span {
   margin-top: rem(12);
   display: inline-block;
+}
+
+.curriculum-table--medical {
+  @extend .curriculum-table;
+}
+
+.curriculum-table--medical th:nth-child(1),
+.curriculum-table--medical td:nth-child(1) {
+  width: rem(82);
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+  @include mq("md") {
+    width: 15%;
+  }
+}
+
+.curriculum-table--medical th:nth-child(2),
+.curriculum-table--medical td:nth-child(2) {
+  width: rem(144);
+  @include mq("md") {
+    width: calc(192 / 904 * 100%);
+  }
+}
+
+.curriculum-table--medical th:nth-child(3),
+.curriculum-table--medical td:nth-child(3) {
+  width: rem(94);
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+  font-feature-settings: "palt";
+  @include mq("md") {
+    width: calc(95 / 904 * 100%);
+  }
 }
