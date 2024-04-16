@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.corporation-question {
+  background-color: $white;
+}
+
+.corporation-question__inner.inner--small {
+}
+
+.corporation-question__container {
+}
+
+.corporation-question__head {
+  text-align: center;
+}
+
+.corporation-question__list {
+  margin-top: rem(40);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  @include mq("md") {
+    margin-top: rem(50);
+    grid-template-columns: repeat(4, minmax(0, rem(216)));
+  }
+}
+
+.corporation-question__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  @include mq("md") {
+    padding-top: rem(5);
+  }
+}
+
+.corporation-question__item:not(:nth-child(-n + 2)) {
+  border-top: 1px solid $beige;
+  @include mq("md") {
+    border-top: none;
+  }
+}
+
+.corporation-question__item:nth-child(even) {
+  border-left: 1px solid $beige;
+  @include mq("md") {
+    border-left: none;
+  }
+}
+
+.corporation-question__item:not(:last-child) {
+  @include mq("md") {
+    border-right: 1px solid $beige;
+  }
+}
+
+.corporation-question__icon {
+  width: fit-content;
+  margin-inline: auto;
+  flex-grow: 1;
+  display: grid;
+  align-items: center;
+}
+
+.corporation-question__icon img {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  @include mq("md") {
+    width: 100%;
+  }
+}
+
+.corporation-question__text {
+  margin-top: rem(12);
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(25 / 14);
+  text-align: center;
+  @include mq("md") {
+    font-size: clamp(10px, calc(14 / 1400 * 100vw), 14px);
+  }
+}
+
+.corporation-question__read {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.corporation-question__read-small {
+  font-size: rem(18);
+  font-weight: $bold;
+  @include mq("md") {
+    letter-spacing: 0.15em;
+  }
+}
+
+.corporation-question__read-large {
+  margin-top: rem(4);
+  font-size: rem(26);
+  font-weight: $bold;
+  line-height: calc(58 / 40);
+  @include mq("md") {
+    margin-top: 0;
+    font-size: rem(40);
+    letter-spacing: 0.15em;
+  }
+}
+
+.corporation-question__read-large span {
+  color: $red;
+}
+
+.corporation-question__button {
+  margin-top: rem(40);
+  text-align: center;
+}

@@ -7,10 +7,14 @@
   font-size: rem(21);
   font-weight: $bold;
   color: $blue;
-  line-height: 1;
+  line-height: 1.2;
   @include mq("md") {
     font-size: rem(38);
   }
+}
+
+.section-head__main span {
+  display: inline-block;
 }
 
 .section-head__sub {
@@ -25,7 +29,7 @@
   align-items: center;
   justify-content: center;
   @include mq("md") {
-    margin-top: rem(23);
+    margin-top: rem(21);
     padding-left: rem(42);
     font-size: rem(16);
   }

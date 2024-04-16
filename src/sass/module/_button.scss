@@ -53,6 +53,29 @@
   padding-block: rem(18);
 }
 
+.button--small2 {
+  @extend .button;
+  max-width: rem(345);
+  width: 100%;
+  padding: rem(15);
+  @include mq("md") {
+    padding-top: rem(18);
+    padding-bottom: rem(14);
+    font-size: rem(20);
+    max-width: rem(362);
+    border-radius: rem(30) 0 rem(30) 0;
+  }
+}
+
+.button--small2 span {
+  font-size: 11px;
+  text-transform: initial;
+  margin-top: rem(8);
+  @include mq("md") {
+    margin-top: rem(4);
+  }
+}
+
 @media (any-hover: hover) {
   .button:hover {
     background-color: $blue;

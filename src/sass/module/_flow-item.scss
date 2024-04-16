@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+.flow-item--corporation {
+  @extend .flow-item;
+}
+
 .flow-item__head {
   @include mq("md") {
     width: 100%;
@@ -37,4 +41,28 @@
 .flow-item__text {
   margin-top: rem(20);
   flex-grow: 1;
+}
+
+.flow-item__main-text {
+  font-size: rem(14);
+  color: $black2;
+  line-height: 1.7;
+  text-align: justify;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(30 / 16);
+  }
+}
+
+.flow-item__note {
+  margin-top: rem(4);
+  font-size: rem(13);
+  color: $gray;
+  line-height: 1.8;
+  padding-left: 1em;
+  text-indent: -1em;
+  @include mq("md") {
+    font-size: clamp(10px, calc(13 / 1400 * 100vw), 13px);
+    line-height: calc(30 / 13);
+  }
 }

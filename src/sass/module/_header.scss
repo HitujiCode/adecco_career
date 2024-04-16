@@ -11,6 +11,10 @@
   }
 }
 
+.header--corporation {
+  @extend .header;
+}
+
 .header__inner {
   background-color: rgba($white, 0.9);
   padding-left: rem(10);
@@ -23,8 +27,12 @@
   transition: background-color 0.3s;
   @include mq("md") {
     padding-left: min(calc(15 / 1400 * 100vw), 15px);
-    // padding-right: rem(5);
   }
+}
+
+.header--corporation .header__inner {
+  background-color: $white;
+  padding-inline: rem(5);
 }
 
 .header__inner.is-open {
@@ -45,6 +53,18 @@
     line-height: calc(19 / 15);
     padding-right: rem(10);
     border-right: 2px solid $yellow;
+  }
+}
+
+.header--corporation .header__title {
+  margin-left: rem(10);
+}
+
+.header--corporation .header__title a {
+  padding-left: rem(10);
+  border-left: 2px solid $yellow;
+  @include mq("md") {
+    border-right: none;
   }
 }
 

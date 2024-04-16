@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-corporation-question {
+  padding-block: rem(50);
+  padding-bottom: rem(60);
+  @include mq("md") {
+    padding-block: rem(80);
+  }
+}

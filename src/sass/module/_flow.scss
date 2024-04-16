@@ -4,6 +4,10 @@
   background-color: $white;
 }
 
+.flow--corporation {
+  @extend .flow;
+}
+
 .flow__inner.inner {
 }
 
@@ -14,10 +18,23 @@
   }
 }
 
+.flow--corporation .flow__head {
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
 .flow__content {
   margin-top: rem(32);
   @include mq("md") {
     margin-top: rem(40);
+  }
+}
+
+.flow--corporation .flow__content {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(50);
   }
 }
 
@@ -58,4 +75,8 @@
 .flow__button {
   margin-top: rem(40);
   text-align: center;
+}
+
+.flow--corporation .flow__button {
+  margin-top: rem(50);
 }
