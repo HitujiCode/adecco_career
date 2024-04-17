@@ -4,7 +4,7 @@
   background-color: $white;
 }
 
-.flow--campany {
+.flow--company {
   @extend .flow;
 }
 
@@ -18,7 +18,7 @@
   }
 }
 
-.flow--campany .flow__head {
+.flow--company .flow__head {
   @include mq("md") {
     text-align: center;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-.flow--campany .flow__content {
+.flow--company .flow__content {
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(50);
@@ -77,6 +77,6 @@
   text-align: center;
 }
 
-.flow--campany .flow__button {
+.flow--company .flow__button {
   margin-top: rem(50);
 }

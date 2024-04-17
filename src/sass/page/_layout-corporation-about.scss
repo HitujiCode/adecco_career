@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.layout-campany-about {
+.layout-company-about {
   padding-top: rem(50);
   padding-bottom: rem(60);
   @include mq("md") {

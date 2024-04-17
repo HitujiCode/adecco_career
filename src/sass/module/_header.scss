@@ -11,7 +11,7 @@
   }
 }
 
-.header--campany {
+.header--company {
   @extend .header;
 }
 
@@ -30,7 +30,7 @@
   }
 }
 
-.header--campany .header__inner {
+.header--company .header__inner {
   background-color: $white;
   padding-inline: rem(5);
 }
@@ -56,11 +56,11 @@
   }
 }
 
-.header--campany .header__title {
+.header--company .header__title {
   margin-left: rem(10);
 }
 
-.header--campany .header__title a {
+.header--company .header__title a {
   padding-left: rem(10);
   border-left: 2px solid $yellow;
   @include mq("md") {

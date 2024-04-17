@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campany-wrapper {
+.company-wrapper {
   padding-top: rem(50);
   @include mq("md") {
     padding-top: rem(76);

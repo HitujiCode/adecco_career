@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.campany-footer {
+.company-footer {
   position: relative;
   background-color: $bg-beige;
 }
 
-.campany-footer::before,
-.campany-footer::after {
+.company-footer::before,
+.company-footer::after {
   content: "";
   position: absolute;
   top: rem(-87);
@@ -15,7 +15,7 @@
   }
 }
 
-.campany-footer::before {
+.company-footer::before {
   right: 0;
   width: calc(260 / 375 * 100%);
   height: rem(87);
@@ -27,7 +27,7 @@
   }
 }
 
-.campany-footer::after {
+.company-footer::after {
   inset-inline: 0;
   height: rem(87);
   background-color: $bg-beige;
@@ -37,10 +37,10 @@
   }
 }
 
-.campany-footer__inner.inner {
+.company-footer__inner.inner {
 }
 
-.campany-footer__container {
+.company-footer__container {
   color: $white;
   padding-top: rem(20);
   padding-bottom: rem(76);
@@ -50,7 +50,7 @@
   }
 }
 
-.campany-footer__content {
+.company-footer__content {
   @include mq("md") {
     display: flex;
     gap: rem(45);
@@ -58,42 +58,42 @@
   }
 }
 
-.campany-footer__info {
+.company-footer__info {
   @include mq("md") {
     max-width: rem(467);
     width: 100%;
   }
 }
 
-.campany-footer__title {
+.company-footer__title {
   font-size: rem(17);
   font-weight: $semi-bold;
   line-height: calc(30 / 17);
 }
 
-.campany-footer__contact {
+.company-footer__contact {
   margin-top: rem(24);
   @include mq("md") {
     margin-top: rem(20);
   }
 }
 
-.campany-footer__contact-head {
+.company-footer__contact-head {
   font-size: rem(17);
   font-weight: $bold;
   line-height: 1;
 }
 
-.campany-footer__contact-list {
+.company-footer__contact-list {
   margin-top: rem(20);
 }
 
-.campany-footer__contact-wrap {
+.company-footer__contact-wrap {
   display: flex;
 }
 
-.campany-footer__contact-term,
-.campany-footer__contact-description {
+.company-footer__contact-term,
+.company-footer__contact-description {
   font-size: rem(13);
   line-height: 1;
   padding-bottom: rem(16);
@@ -103,7 +103,7 @@
   }
 }
 
-.campany-footer__contact-term {
+.company-footer__contact-term {
   width: calc(66 / 345 * 100%);
   font-weight: $semi-bold;
   @include mq("md") {
@@ -111,27 +111,27 @@
   }
 }
 
-.campany-footer__contact-description {
+.company-footer__contact-description {
   flex: 1;
   font-weight: $medium;
   border-left: 1px solid $white;
   padding-left: rem(12);
 }
 
-.campany-footer__contact-description span {
+.company-footer__contact-description span {
   display: inline-block;
 }
 
-.campany-footer__contact-term--large {
-  @extend .campany-footer__contact-term;
+.company-footer__contact-term--large {
+  @extend .company-footer__contact-term;
   padding-bottom: 0;
   @include mq("md") {
     padding-bottom: 0;
   }
 }
 
-.campany-footer__contact-description--large {
-  @extend .campany-footer__contact-description;
+.company-footer__contact-description--large {
+  @extend .company-footer__contact-description;
   line-height: calc(30 / 13);
   margin-top: rem(-8);
   padding-bottom: 0;
@@ -141,7 +141,7 @@
   }
 }
 
-.campany-footer__reception {
+.company-footer__reception {
   margin-top: rem(30);
   @include mq("md") {
     max-width: rem(486);
@@ -149,7 +149,7 @@
   }
 }
 
-.campany-footer__banners {
+.company-footer__banners {
   margin-top: rem(40);
   margin-inline: auto;
   display: grid;
@@ -163,17 +163,17 @@
   }
 }
 
-.campany-footer__banner {
+.company-footer__banner {
 }
 
-.campany-footer__banner img {
+.company-footer__banner img {
   aspect-ratio: 155/54;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.campany-footer__nav {
+.company-footer__nav {
   margin-top: rem(32);
   display: grid;
   grid-template-columns: fit-content(100%) fit-content(100%);
@@ -188,10 +188,10 @@
   }
 }
 
-.campany-footer__nav-item {
+.company-footer__nav-item {
 }
 
-.campany-footer__nav-item a {
+.company-footer__nav-item a {
   display: inline-block;
   position: relative;
   padding-left: rem(20);
@@ -200,7 +200,7 @@
   line-height: 1;
 }
 
-.campany-footer__nav-item a::before {
+.company-footer__nav-item a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -218,7 +218,7 @@
   }
 }
 
-.campany-footer__app-block {
+.company-footer__app-block {
   margin-top: rem(32);
   background-color: $white;
   border-radius: rem(10);
@@ -230,7 +230,7 @@
   }
 }
 
-.campany-footer__app-top {
+.company-footer__app-top {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,7 +240,7 @@
   }
 }
 
-.campany-footer__app-img {
+.company-footer__app-img {
   display: inline-block;
   margin-top: rem(10);
   width: rem(142);
@@ -251,14 +251,14 @@
   }
 }
 
-.campany-footer__app-img img {
+.company-footer__app-img img {
   aspect-ratio: 142/46;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.campany-footer__app-wrap {
+.company-footer__app-wrap {
   display: contents;
   @include mq("md") {
     display: block;
@@ -266,14 +266,14 @@
   }
 }
 
-.campany-footer__app-read,
-.campany-footer__app-text {
+.company-footer__app-read,
+.company-footer__app-text {
   font-size: rem(14);
   color: $black;
   line-height: calc(20 / 14);
 }
 
-.campany-footer__app-read {
+.company-footer__app-read {
   font-weight: $bold;
   text-align: center;
   order: 1;
@@ -283,7 +283,7 @@
   }
 }
 
-.campany-footer__app-text {
+.company-footer__app-text {
   margin-top: rem(16);
   max-width: calc(262 / 285 * 100%);
   order: 3;
@@ -293,11 +293,11 @@
   }
 }
 
-.campany-footer__app-text span {
+.company-footer__app-text span {
   display: inline-block;
 }
 
-.campany-footer__app-bottom {
+.company-footer__app-bottom {
   margin-top: rem(16);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -309,18 +309,18 @@
   }
 }
 
-.campany-footer__app-link {
+.company-footer__app-link {
   display: inline-block;
 }
 
-.campany-footer__app-link img {
+.company-footer__app-link img {
   aspect-ratio: 137/41;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.campany-footer__copyright {
+.company-footer__copyright {
   background-color: $white;
   display: grid;
   place-items: center;
@@ -331,13 +331,13 @@
   }
 }
 
-.campany-footer__copyright small {
+.company-footer__copyright small {
   font-size: 14px;
   color: $black;
   line-height: 1;
 }
 
 @media (any-hover: hover) {
-  .campany-footer__nav-item a:hover {
+  .company-footer__nav-item a:hover {
   }
 }

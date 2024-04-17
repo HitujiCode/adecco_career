@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.campany-question {
+.company-question {
   background-color: $white;
 }
 
-.campany-question__inner.inner--small {
+.company-question__inner.inner--small {
 }
 
-.campany-question__container {
+.company-question__container {
 }
 
-.campany-question__head {
+.company-question__head {
   text-align: center;
 }
 
-.campany-question__list {
+.company-question__list {
   margin-top: rem(40);
   display: grid;
   justify-content: center;
@@ -25,7 +25,7 @@
   }
 }
 
-.campany-question__item {
+.company-question__item {
   display: flex;
   flex-direction: column;
   padding-top: rem(10);
@@ -35,27 +35,27 @@
   }
 }
 
-.campany-question__item:not(:nth-child(-n + 2)) {
+.company-question__item:not(:nth-child(-n + 2)) {
   border-top: 1px solid $beige;
   @include mq("md") {
     border-top: none;
   }
 }
 
-.campany-question__item:nth-child(even) {
+.company-question__item:nth-child(even) {
   border-left: 1px solid $beige;
   @include mq("md") {
     border-left: none;
   }
 }
 
-.campany-question__item:not(:last-child) {
+.company-question__item:not(:last-child) {
   @include mq("md") {
     border-right: 1px solid $beige;
   }
 }
 
-.campany-question__icon {
+.company-question__icon {
   width: fit-content;
   margin-inline: auto;
   flex-grow: 1;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.campany-question__icon img {
+.company-question__icon img {
   width: 95%;
   height: auto;
   object-fit: contain;
@@ -72,7 +72,7 @@
   }
 }
 
-.campany-question__text {
+.company-question__text {
   margin-top: rem(12);
   font-size: rem(14);
   font-weight: $bold;
@@ -83,12 +83,12 @@
   }
 }
 
-.campany-question__read {
+.company-question__read {
   margin-top: rem(40);
   text-align: center;
 }
 
-.campany-question__read-small {
+.company-question__read-small {
   font-size: rem(18);
   font-weight: $bold;
   @include mq("md") {
@@ -96,7 +96,7 @@
   }
 }
 
-.campany-question__read-large {
+.company-question__read-large {
   margin-top: rem(4);
   font-size: rem(26);
   font-weight: $bold;
@@ -108,11 +108,11 @@
   }
 }
 
-.campany-question__read-large span {
+.company-question__read-large span {
   color: $red;
 }
 
-.campany-question__button {
+.company-question__button {
   margin-top: rem(40);
   text-align: center;
 }
