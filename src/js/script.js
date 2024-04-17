@@ -1,7 +1,28 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
-  // ハンバーガーメニュー
+  // WordPressで$を使用できるようにする
+  const pageTop = $(".js-fixed");
+  pageTop.hide();
+
+  // グローバル変数としてscrollPositionを管理
   let scrollPosition = 0;
+
+  $(window).scroll(function () {
+    let currentScrollPosition = $(this).scrollTop();
+    let windowHeight = $(this).height();
+    let bodyHeight = $(document).height();
+    let footerHeight = $(".footer").outerHeight();
+
+    if (currentScrollPosition > 70) {
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
+  });
+
+  pageTop.click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 300, "swing");
+    return false;
+  });
 
   function openDrawer() {
     scrollPosition = $(window).scrollTop();
@@ -38,13 +59,11 @@ jQuery(function ($) {
     }
   });
 
-  // Q&Aアコーディオン
   $(".js-faq").on("click", function () {
     $(this).next().slideToggle();
     $(this).toggleClass("is-open");
   });
 
-  // スクロールに応じてヘッダーにactiveクラスを付与
   $(document).ready(function () {
     $(window).scroll(function () {
       const currentPosition =
@@ -68,43 +87,31 @@ jQuery(function ($) {
       });
     });
   });
-});
 
-// ページ内リンクのスムーススクロール
-$(function () {
   $(window).on("load", function () {
     adjustScrollPosition();
   });
 
-  // ハッシュ値を考慮してスクロール位置を調整
   function adjustScrollPosition() {
     const headerHeight = $(".js-header").outerHeight();
     const hash = window.location.hash;
 
-    if (hash) {
+    if (hash && $(hash).length) {
       const target = $(hash);
-      if (target.length) {
-        const position = target.offset().top - headerHeight;
-        $("html, body").scrollTop(position);
-      }
+      const position = target.offset().top - headerHeight;
+      $("html, body").scrollTop(position);
     }
   }
 
-  // ページ内リンクのクリックイベントハンドラー
   $('a[href^="#"]').click(function (e) {
     e.preventDefault();
     const headerHeight = $(".js-header").outerHeight();
     const href = $(this).attr("href");
     const target = $(href === "#" || href === "" ? "html" : href);
-    const position = target.offset().top - headerHeight;
 
-    // スムーズスクロール
-    $("html, body").animate(
-      {
-        scrollTop: position,
-      },
-      400,
-      "swing"
-    );
+    if (target.length) {
+      const position = target.offset().top - headerHeight;
+      $("html, body").animate({ scrollTop: position }, 400, "swing");
+    }
   });
 });
