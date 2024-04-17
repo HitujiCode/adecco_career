@@ -195,8 +195,8 @@ const clean = () => {
 const watchFiles = () => {
   watch(srcPath.css, series(cssSass, browserSyncReload));
   watch(srcPath.js, series(jsBabel, browserSyncReload));
-  watch(srcPath.font, series(fontCopy, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
+  watch(srcPath.font, series(fontCopy, browserSyncReload));
   watch(srcPath.html, series(htmlCopy, browserSyncReload));
 };
 
