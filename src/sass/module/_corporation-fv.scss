@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.corporation-fv {
+.campany-fv {
   position: relative;
   overflow-x: clip;
   background-color: $white;
 }
 
-.corporation-fv::before {
+.campany-fv::before {
   content: "";
   position: absolute;
   top: 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.corporation-fv::after {
+.campany-fv::after {
   content: "";
   position: absolute;
   top: 0;
@@ -37,11 +37,11 @@
   }
 }
 
-.corporation-fv__bg-bottom {
+.campany-fv__bg-bottom {
   position: relative;
 }
 
-.corporation-fv__bg-bottom::after {
+.campany-fv__bg-bottom::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -54,7 +54,7 @@
   }
 }
 
-.corporation-fv__bg-bottom::before {
+.campany-fv__bg-bottom::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -67,19 +67,19 @@
   }
 }
 
-.corporation-fv__inner.inner {
+.campany-fv__inner.inner {
   position: relative;
   z-index: 1;
 }
 
-.corporation-fv__container {
+.campany-fv__container {
   @include mq("md") {
     display: flex;
     gap: rem(10);
   }
 }
 
-.corporation-fv__content {
+.campany-fv__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +91,7 @@
   }
 }
 
-.corporation-fv__text-top {
+.campany-fv__text-top {
   display: flex;
   position: relative;
   @include mq("md") {
@@ -99,7 +99,7 @@
   }
 }
 
-.corporation-fv__circle {
+.campany-fv__circle {
   position: absolute;
   top: rem(-60);
   left: rem(-30);
@@ -111,14 +111,14 @@
   }
 }
 
-.corporation-fv__circle img {
+.campany-fv__circle img {
   aspect-ratio: 166/151;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.corporation-fv__text {
+.campany-fv__text {
   font-size: rem(18);
   font-weight: $semi-bold;
   line-height: calc(42 / 29);
@@ -129,11 +129,11 @@
   }
 }
 
-.corporation-fv__text span {
+.campany-fv__text span {
   color: $blue;
 }
 
-.corporation-fv__read {
+.campany-fv__read {
   margin-top: rem(12);
   max-width: rem(345);
   @include mq("md") {
@@ -142,14 +142,14 @@
   }
 }
 
-.corporation-fv__read img {
+.campany-fv__read img {
   aspect-ratio: 617/203;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.corporation-fv__apply {
+.campany-fv__apply {
   margin-top: rem(30);
   background-color: $white;
   padding: rem(20) rem(16);
@@ -162,7 +162,7 @@
   }
 }
 
-.corporation-fv__apply-top {
+.campany-fv__apply-top {
   color: $black2;
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@
   }
 }
 
-.corporation-fv__apply-text {
+.campany-fv__apply-text {
   font-size: rem(18);
   font-weight: $bold;
   text-align: center;
@@ -189,7 +189,7 @@
   }
 }
 
-.corporation-fv__apply-data {
+.campany-fv__apply-data {
   font-weight: $bold;
   @include mq("md") {
     padding-top: rem(4);
@@ -197,28 +197,28 @@
   }
 }
 
-.corporation-fv__apply-data-medium {
+.campany-fv__apply-data-medium {
   font-size: rem(24);
   @include mq("md") {
     font-size: rem(24);
   }
 }
 
-.corporation-fv__apply-data-large {
+.campany-fv__apply-data-large {
   font-size: rem(24);
   @include mq("md") {
     font-size: rem(29);
   }
 }
 
-.corporation-fv__apply-data-small {
+.campany-fv__apply-data-small {
   font-size: rem(24);
   @include mq("md") {
     font-size: rem(22);
   }
 }
 
-.corporation-fv__apply-button {
+.campany-fv__apply-button {
   margin-top: rem(16);
   text-align: center;
   @include mq("md") {
@@ -226,7 +226,7 @@
   }
 }
 
-.corporation-fv__notes {
+.campany-fv__notes {
   margin-top: rem(20);
   width: fit-content;
   text-align: left;
@@ -236,12 +236,12 @@
   }
 }
 
-.corporation-fv__note {
+.campany-fv__note {
   font-size: rem(12);
   line-height: calc(17 / 12);
 }
 
-.corporation-fv__img {
+.campany-fv__img {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   @include mq("md") {
@@ -251,7 +251,7 @@
   }
 }
 
-.corporation-fv__img img {
+.campany-fv__img img {
   aspect-ratio: 375/300;
   width: 100%;
   height: 100%;

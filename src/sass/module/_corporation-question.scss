@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.corporation-question {
+.campany-question {
   background-color: $white;
 }
 
-.corporation-question__inner.inner--small {
+.campany-question__inner.inner--small {
 }
 
-.corporation-question__container {
+.campany-question__container {
 }
 
-.corporation-question__head {
+.campany-question__head {
   text-align: center;
 }
 
-.corporation-question__list {
+.campany-question__list {
   margin-top: rem(40);
   display: grid;
   justify-content: center;
@@ -25,7 +25,7 @@
   }
 }
 
-.corporation-question__item {
+.campany-question__item {
   display: flex;
   flex-direction: column;
   padding-top: rem(10);
@@ -35,27 +35,27 @@
   }
 }
 
-.corporation-question__item:not(:nth-child(-n + 2)) {
+.campany-question__item:not(:nth-child(-n + 2)) {
   border-top: 1px solid $beige;
   @include mq("md") {
     border-top: none;
   }
 }
 
-.corporation-question__item:nth-child(even) {
+.campany-question__item:nth-child(even) {
   border-left: 1px solid $beige;
   @include mq("md") {
     border-left: none;
   }
 }
 
-.corporation-question__item:not(:last-child) {
+.campany-question__item:not(:last-child) {
   @include mq("md") {
     border-right: 1px solid $beige;
   }
 }
 
-.corporation-question__icon {
+.campany-question__icon {
   width: fit-content;
   margin-inline: auto;
   flex-grow: 1;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.corporation-question__icon img {
+.campany-question__icon img {
   width: 95%;
   height: auto;
   object-fit: contain;
@@ -72,7 +72,7 @@
   }
 }
 
-.corporation-question__text {
+.campany-question__text {
   margin-top: rem(12);
   font-size: rem(14);
   font-weight: $bold;
@@ -83,12 +83,12 @@
   }
 }
 
-.corporation-question__read {
+.campany-question__read {
   margin-top: rem(40);
   text-align: center;
 }
 
-.corporation-question__read-small {
+.campany-question__read-small {
   font-size: rem(18);
   font-weight: $bold;
   @include mq("md") {
@@ -96,7 +96,7 @@
   }
 }
 
-.corporation-question__read-large {
+.campany-question__read-large {
   margin-top: rem(4);
   font-size: rem(26);
   font-weight: $bold;
@@ -108,11 +108,11 @@
   }
 }
 
-.corporation-question__read-large span {
+.campany-question__read-large span {
   color: $red;
 }
 
-.corporation-question__button {
+.campany-question__button {
   margin-top: rem(40);
   text-align: center;
 }

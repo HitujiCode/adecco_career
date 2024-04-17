@@ -28,7 +28,7 @@
   }
 }
 
-.fixed__button--corporation {
+.fixed__button--campany {
   @extend .fixed__button;
 }
 
@@ -72,12 +72,12 @@
   }
 }
 
-.fixed__button--corporation .fixed__button-before {
+.fixed__button--campany .fixed__button-before {
   opacity: 1;
   transition: opacity 0.3s;
 }
 
-.fixed__button--corporation .fixed__button-after {
+.fixed__button--campany .fixed__button-after {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s;
@@ -120,11 +120,11 @@
     opacity: 1;
   }
 
-  .fixed__button--corporation a:hover .fixed__button-before {
+  .fixed__button--campany a:hover .fixed__button-before {
     opacity: 0;
   }
 
-  .fixed__button--corporation a:hover .fixed__button-after {
+  .fixed__button--campany a:hover .fixed__button-after {
     opacity: 1;
   }
 }

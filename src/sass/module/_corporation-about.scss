@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.corporation-about {
+.campany-about {
   background-color: rgba($yellow, 0.1);
 }
 
-.corporation-about__inner.inner--small {
+.campany-about__inner.inner--small {
 }
 
-.corporation-about__container {
+.campany-about__container {
 }
 
-.corporation-about__head {
+.campany-about__head {
   text-align: center;
 }
 
-.corporation-about__read {
+.campany-about__read {
   margin-top: rem(32);
   text-align: center;
   font-size: rem(15);
@@ -30,14 +30,14 @@
   }
 }
 
-.corporation-about__content {
+.campany-about__content {
   margin-top: rem(40);
   padding-bottom: rem(28);
   border: 3px solid $darkblue;
   background-color: $white2;
 }
 
-.corporation-about__content-head {
+.campany-about__content-head {
   background-color: $darkblue;
   font-size: rem(20);
   font-weight: $bold;
@@ -53,7 +53,7 @@
   }
 }
 
-.corporation-about__content-wrap {
+.campany-about__content-wrap {
   margin-top: rem(24);
   padding-inline: rem(10);
   @include mq("md") {
@@ -62,7 +62,7 @@
   }
 }
 
-.corporation-about__content-list {
+.campany-about__content-list {
   margin-inline: auto;
   display: grid;
   gap: rem(20);
@@ -74,10 +74,10 @@
   }
 }
 
-.corporation-about__content-item {
+.campany-about__content-item {
 }
 
-.corporation-about__content-text {
+.campany-about__content-text {
   margin-top: rem(24);
   font-size: rem(15);
   font-weight: $medium;
@@ -97,7 +97,7 @@
   }
 }
 
-.corporation-about__courses {
+.campany-about__courses {
   margin-top: rem(32);
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@
   }
 }
 
-.corporation-about__course {
+.campany-about__course {
   padding-top: rem(20);
   padding-bottom: rem(24);
   padding-inline: rem(20);
@@ -122,12 +122,12 @@
   }
 }
 
-.corporation-about__course--blue {
-  @extend .corporation-about__course;
+.campany-about__course--blue {
+  @extend .campany-about__course;
   border-top-color: $blue;
 }
 
-.corporation-about__course-head {
+.campany-about__course-head {
   text-align: center;
   font-size: rem(22);
   font-weight: $bold;
@@ -140,7 +140,7 @@
   }
 }
 
-.corporation-about__course-img {
+.campany-about__course-img {
   margin-top: rem(20);
   @include mq("md") {
     margin-top: rem(36);
@@ -148,21 +148,21 @@
   }
 }
 
-.corporation-about__course-img img {
+.campany-about__course-img img {
   aspect-ratio: 434/200;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.corporation-about__list {
+.campany-about__list {
   margin-top: rem(20);
   @include mq("md") {
     margin-top: rem(24);
   }
 }
 
-.corporation-about__item {
+.campany-about__item {
   font-size: rem(16);
   color: $black2;
   line-height: 1;
@@ -173,7 +173,7 @@
   }
 }
 
-.corporation-about__item::before {
+.campany-about__item::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -185,15 +185,15 @@
   border-radius: 50%;
 }
 
-.corporation-about__course--blue .corporation-about__item::before {
+.campany-about__course--blue .campany-about__item::before {
   background-color: $blue;
 }
 
-.corporation-about__item + .corporation-about__item {
+.campany-about__item + .campany-about__item {
   margin-top: rem(12);
 }
 
-.corporation-about__button {
+.campany-about__button {
   margin-top: rem(50);
   text-align: center;
   @include mq("md") {
