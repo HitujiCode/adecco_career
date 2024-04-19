@@ -28,7 +28,8 @@
   background-size: contain;
 }
 
-.button-arrow--white {
+.button-arrow--white,
+.button-arrow--white-small {
   @extend .button-arrow;
   background-color: $white;
   max-width: rem(300);
@@ -56,7 +57,14 @@
   }
 }
 
-.button-arrow--white::after {
+.button-arrow--white-small {
+  @include mq("md") {
+    font-size: clamp(9px, calc(17 / 1400 * 100vw), rem(17));
+  }
+}
+
+.button-arrow--white::after,
+.button-arrow--white-small::after {
   right: rem(15);
   width: rem(16);
   height: rem(14);
