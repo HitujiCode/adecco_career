@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.description-head {
+  position: relative;
+  font-size: rem(15);
+  font-weight: $bold;
+  color: $ocher;
+  line-height: 1;
+  padding-left: rem(17);
+  display: inline-flex;
+  align-items: center;
+  @include mq("md") {
+    font-size: clamp(10px, calc(15 / 1400 * 100vw), rem(15));
+  }
+}
+
+.description-head::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: rem(10);
+  aspect-ratio: 1;
+  background-color: $ocher;
+}
+
+.description-head--blue {
+  @extend .description-head;
+  color: $blue;
+}
+
+.description-head--blue::before {
+  background-color: $blue;
+}
