@@ -187,6 +187,11 @@
   border-right: 1px solid $beige;
 }
 
+.header__nav-sitemap {
+  margin-left: rem(30);
+  margin-left: rem(10);
+}
+
 .header__nav-sitemap a {
   background-color: $beige;
   border-bottom: 3px solid $ocher;
@@ -197,9 +202,9 @@
   display: flex;
   align-items: center;
   padding-inline: calc(38 / 1400 * 100vw);
+  padding-inline: rem(24);
   height: 100%;
   transition: border 0.1s;
-  margin-left: rem(30);
 }
 
 .header__nav-sitemap span {

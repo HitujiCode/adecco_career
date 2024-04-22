@@ -151,7 +151,8 @@
   align-items: center;
   @include mq("md") {
     margin-top: 0;
-    width: calc(468 / 1000 * 100%);
+    // width: calc(468 / 1000 * 100%);
+    width: 48%;
     align-items: flex-start;
   }
 }
@@ -162,7 +163,8 @@
   align-items: center;
   @include mq("md") {
     flex-direction: initial;
-    gap: rem(50);
+    // gap: rem(50);
+    gap: rem(32);
     justify-content: center;
     align-items: flex-start;
   }
