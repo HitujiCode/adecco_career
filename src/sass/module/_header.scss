@@ -146,12 +146,6 @@
 .header__nav-list {
   display: flex;
   height: inherit;
-  @include mq("md") {
-    // padding-right: rem(12);
-  }
-  @include mq("xl") {
-    // padding-right: calc(30 / 1400 * 100vw);
-  }
 }
 
 .header__nav-item {
@@ -189,7 +183,6 @@
 
 .header__nav-sitemap {
   margin-left: rem(30);
-  margin-left: rem(10);
 }
 
 .header__nav-sitemap a {
