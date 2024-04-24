@@ -58,9 +58,7 @@
 }
 
 .button-arrow--white-small {
-  @include mq("md") {
-    font-size: clamp(9px, calc(16 / 1400 * 100vw), rem(16));
-  }
+  font-feature-settings: "palt";
 }
 
 .button-arrow--white::after,
