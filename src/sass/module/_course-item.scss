@@ -145,8 +145,13 @@
 .course-item__foot {
   margin-top: rem(16);
   display: flex;
-  gap: rem(10);
-  align-items: flex-end;
+  flex-direction: column;
+  gap: rem(20);
+  @include mq("md") {
+    flex-direction: initial;
+    align-items: flex-end;
+    gap: rem(10);
+  }
 }
 
 .course-item__jobs {
